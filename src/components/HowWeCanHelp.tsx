@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { CheckCircle } from 'lucide-react'; // Importing a clean checkmark icon from Lucide
+import Image from 'next/image';
 
 export default function HowWeCanHelp() {
   const services = [
@@ -19,10 +20,12 @@ export default function HowWeCanHelp() {
           <div className="relative flex justify-center">
             <div className="relative">
               {/* Main team image */}
-              <img
+              <Image
                 src="/help.png"
                 alt="Our Team"
                 className="relative z-10 w-full max-w-lg"
+                width={192}
+                height={192}
               />
               {/* Drop shadow background - positioned left and below, 3/4 size */}
               <div

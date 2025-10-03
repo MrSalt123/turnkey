@@ -1,4 +1,3 @@
-import { Pencil, ClipboardCheck, Users, Headset } from 'lucide-react';
 import HowWeWork from '@/components/HowWeWork';
 import FeaturedFrameworks from '@/components/FeaturedFrameworks';
 import HowWeCanHelp from '@/components/HowWeCanHelp';
@@ -31,7 +30,7 @@ export default function Home() {
               </span>
             </h1>
             <h4 className="text-white/90 w-2/3 mx-auto text-center mb-16 font-light">
-              Tailored to your business, not boxed into someone else's
+              Tailored to your business, not boxed into someone else&apos;s
             </h4>
             <div className="flex gap-6 w-2/3 flex-wrap mx-auto">
               <button className="flex-1 text-white px-3 py-2 rounded-lg hover:bg-white/10 transition-colors border border-white/20 shadow-lg flex items-center justify-center gap-2 min-w-[120px]">
@@ -55,7 +54,7 @@ export default function Home() {
             </div>
             <div className="flex gap-6 w-2/3 mt-4 flex-wrap mx-auto">
               <button className="flex-1 bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-colors border border-white/20 shadow-lg min-w-[120px]">
-                <span className="text-lg font-medium uppercase tracking-wide">Let's Talk</span>
+                <span className="text-lg font-medium uppercase tracking-wide">Let&apos;s Talk</span>
               </button>
               <button className="flex-1 bg-white/20 text-white px-3 py-2 rounded-lg hover:bg-white/30 transition-colors border border-white/20 shadow-lg min-w-[120px]">
                 <span className="text-lg font-medium uppercase tracking-wide">See How We Work</span>
@@ -87,7 +86,7 @@ export default function Home() {
                   Contact Us
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Ready to get started with your compliance journey? We're here to help you navigate the complex world of regulatory requirements and get you audit-ready.
+                  Ready to get started with your compliance journey? We&apos;re here to help you navigate the complex world of regulatory requirements and get you audit-ready.
                 </p>
               </div>
 

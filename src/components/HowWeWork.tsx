@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Search, Settings, FileCheck, Users, Infinity } from 'lucide-react';
+import { Search, Settings, FileCheck, Users } from 'lucide-react';
 import Image from 'next/image';
 
 // --- New Step Card Component ---

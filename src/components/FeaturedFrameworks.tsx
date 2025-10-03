@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 // Security icon for SOC 2
 const SecurityIcon = () => (
@@ -82,15 +83,17 @@ const FeaturedFrameworks = () => {
               Mastering the Standards of Security
             </h2>
             <p className="text-lg text-white/90 max-w-3xl">
-              Our team possesses deep expertise in the world's leading compliance frameworks, ensuring your program is robust, effective, and ready for any audit.
+              Our team possesses deep expertise in the world&apos;s leading compliance frameworks, ensuring your program is robust, effective, and ready for any audit.
             </p>
           </div>
           <div className="hidden lg:flex justify-center items-center">
-            <img 
+            <Image 
               src="/mountains/sunset.svg" 
               alt="Mountain Illustration" 
               className="w-48 h-48 object-contain"
               onError={(e) => { e.currentTarget.src = 'https://placehold.co/192x192/svg?text=SVG'; e.currentTarget.onerror = null; }}
+              width={192}
+              height={192}
             />
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function TechStack() {
             </span>
           </h2>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-white">
-          Whether you're on the latest cloud platform or a custom on-prem environment, we design practical controls that simplify compliance and align with your unique operational needs.          </p>
+          Whether you&apos;re on the latest cloud platform or a custom on-prem environment, we design practical controls that simplify compliance and align with your unique operational needs.          </p>
         </div>
 
          {/* Tech Stack Logo Cloud */}

@@ -1,4 +1,5 @@
 import { ShieldCheck, Scale, GanttChartSquare, Users } from 'lucide-react'; // Added more icons
+import Image from 'next/image';
 
 // Updated benefits array with unique icons for each
 const benefits = [
@@ -58,11 +59,11 @@ export default function WhyTurnKey() {
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-full max-w-lg">
                 {/* Main team strategy image - Replaced Next/Image with standard <img> */}
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
                   alt="A team of professionals collaborating on a strategy at a whiteboard"
                   width="500"
-                  height="400"
+                  height={400}                    
                   className="relative z-10 w-full h-auto shadow-xl"
                 />
                 {/* Decorative background element */}

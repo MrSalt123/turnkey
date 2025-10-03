@@ -1,4 +1,5 @@
 import { Library, ShieldCheck, Award } from 'lucide-react';
+import Image from 'next/image';
 
 const values = [
   {
@@ -43,10 +44,12 @@ export default function ValuesSection() {
             </h2>
           </div>
           <div className="hidden lg:flex justify-center items-center">
-            <img
+            <Image
               src="/mountains/fuji.svg"
               alt="Fuji Mountain Icon"
               className="w-48 h-48 object-contain"
+              width={192}
+              height={192}
               onError={(e) => { e.currentTarget.src = 'https://placehold.co/192x192/svg?text=SVG'; e.currentTarget.onerror = null; }}
             />
           </div>
