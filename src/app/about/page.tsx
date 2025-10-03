@@ -13,13 +13,6 @@ export default function About() {
     industriesServed: 0
   });
 
-  const targetCounts = {
-    auditPass: 100,
-    yearsExperience: 50,
-    fasterAudit: 40,
-    industriesServed: 15
-  };
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -40,6 +33,13 @@ export default function About() {
 
   useEffect(() => {
     if (!isVisible) return;
+
+    const targetCounts = {
+      auditPass: 100,
+      yearsExperience: 50,
+      fasterAudit: 40,
+      industriesServed: 15
+    };
 
     const duration = 2000; // 2 seconds
     const steps = 60; // 60 steps for smooth animation
@@ -67,7 +67,7 @@ export default function About() {
     return () => {
       intervals.forEach(interval => clearInterval(interval));
     };
-  }, [isVisible, targetCounts]);
+  }, [isVisible]);
   return (
     <div className="min-h-screen relative">
       <div

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { ShieldCheck, Cpu, ClipboardCheck, Database, FileText, Heart, Lock, CreditCard, Brain } from 'lucide-react';
+import Image from 'next/image';
 
 // Framework icon component that renders different icons based on the framework
 const FrameworkIcon = ({ framework }: { framework: string }) => {
@@ -113,9 +114,11 @@ export default function Frameworks() {
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/strategy.jpg"
                 alt="Compliance Frameworks"
+                width={512}
+                height={448}
                 className="w-2/3 max-w-lg object-cover h-112"
               />
             </div>
@@ -138,11 +141,12 @@ export default function Frameworks() {
               </p>
             </div>
             <div className="hidden lg:flex justify-center items-center">
-              <img
+              <Image
                 src="/mountains/mountains.svg"
                 alt="Landscape Illustration"
+                width={192}
+                height={192}
                 className="w-48 h-48 object-contain"
-                onError={(e) => { e.currentTarget.src = 'https://placehold.co/192x192/svg?text=SVG'; e.currentTarget.onerror = null; }}
               />
             </div>
           </div>
@@ -189,7 +193,7 @@ export default function Frameworks() {
             Ready to Implement Your Compliance Framework?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Let our experts guide you through the compliance journey that's right for your business.
+            Let our experts guide you through the compliance journey that&apos;s right for your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">

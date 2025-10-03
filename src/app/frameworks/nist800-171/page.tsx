@@ -43,7 +43,7 @@ export default function NIST800171Page() {
             {/* Right column - Content */}
             <div>
               <p className="text-white/90 text-xl leading-relaxed">
-                NIST Special Publication 800-171 provides guidelines for protecting Controlled Unclassified Information (CUI) in non-federal systems and organizations. It's essential for defense contractors and organizations working with federal agencies.
+                NIST Special Publication 800-171 provides guidelines for protecting Controlled Unclassified Information (CUI) in non-federal systems and organizations. It&apos;s essential for defense contractors and organizations working with federal agencies.
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function NIST800171Page() {
                 What is NIST 800-171?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                NIST 800-171 establishes security requirements for protecting CUI in non-federal systems and organizations. It's particularly important for defense contractors, research institutions, and organizations that handle federal contract information.
+                NIST 800-171 establishes security requirements for protecting CUI in non-federal systems and organizations. It&apos;s particularly important for defense contractors, research institutions, and organizations that handle federal contract information.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 The framework provides 110 security controls across 14 families, covering access control, awareness training, audit and accountability, and other critical security areas.

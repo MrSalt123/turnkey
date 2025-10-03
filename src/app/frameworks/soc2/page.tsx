@@ -151,7 +151,7 @@ export default function SOC2Page() {
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Information designated as confidential is protected according to the entity's objectives.
+                Information designated as confidential is protected according to the entity&apos;s objectives.
               </p>
             </div>
 

@@ -1,4 +1,4 @@
-import { Search, Pencil, ClipboardCheck, Users, Headset } from 'lucide-react';
+import { Pencil, ClipboardCheck, Users, Headset } from 'lucide-react';
 import HowWeWork from '@/components/HowWeWork';
 import FeaturedFrameworks from '@/components/FeaturedFrameworks';
 import HowWeCanHelp from '@/components/HowWeCanHelp';
