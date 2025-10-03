@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
 import ValuesSection from '@/components/ValuesSection';
 
 export default function About() {
@@ -66,7 +67,7 @@ export default function About() {
     return () => {
       intervals.forEach(interval => clearInterval(interval));
     };
-  }, [isVisible]);
+  }, [isVisible, targetCounts]);
   return (
     <div className="min-h-screen relative">
       <div
@@ -78,7 +79,7 @@ export default function About() {
             {/* Left column - Content */}
             <div>
               <h2 className="text-white text-left mb-6">
-                More Than a Service. <br /> We're Your Parnter.
+                More Than a Service. <br /> We&apos;re Your Partner.
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
                 We believe in a true partnership, creating personalized compliance programs that align with your business.<br /><br />
@@ -98,9 +99,11 @@ export default function About() {
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/about.webp"
                 alt="About TurnKey Compliance"
+                width={512}
+                height={448}
                 className="w-2/3 max-w-lg object-cover h-112"
               />
             </div>
@@ -114,9 +117,11 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex justify-center">
               <div className="relative">
-                <img
+                <Image
                   src="/approach.jpg"
                   alt="A professional team collaborating in a modern office"
+                  width={512}
+                  height={384}
                   className="relative z-10 w-full h-auto object-cover max-w-lg aspect-[4/3]"
                 />
                 <div
@@ -153,7 +158,7 @@ export default function About() {
               By The Numbers
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our track record speaks for itself. Here's what we've achieved for our clients.
+              Our track record speaks for itself. Here&apos;s what we&apos;ve achieved for our clients.
             </p>
           </div>
 
@@ -202,11 +207,13 @@ export default function About() {
             <div className="flex justify-center">
               <div className="relative">
                 <div className="absolute -left-4 -top-4 w-full h-full bg-accent z-0 "></div>
-                <img
+                <Image
                     src="/jason.avif"
                     alt="Jason - Founder of TurnKey Compliance"
-                    className="relative z-10 w-96 h-96 object-cover  shadow-lg"
-                />
+                    width={384}
+                    height={384}
+                    className="relative z-10 w-96 h-96 object-cover shadow-lg"
+                  />
               </div>
             </div>
             <div className="space-y-6">
@@ -224,10 +231,10 @@ export default function About() {
                 </p>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                A seasoned compliance professional with over 20 years of experience, Jason has a passion for helping organizations achieve and maintain compliance. Having served as an external auditor in KPMG's IT Advisory Practice, he possesses unique insight into the complexities of audits.
+                A seasoned compliance professional with over 20 years of experience, Jason has a passion for helping organizations achieve and maintain compliance. Having served as an external auditor in KPMG&apos;s IT Advisory Practice, he possesses unique insight into the complexities of audits.
               </p>
               <blockquote className="border-l-4 pl-4 italic text-gray-700" style={{ borderColor: 'var(--color-turnkey)' }}>
-                "This experience inspired me to establish TurnKey, with the goal of simplifying the audit process for clients."
+                &ldquo;This experience inspired me to establish TurnKey, with the goal of simplifying the audit process for clients.&rdquo;
               </blockquote>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Jason frequently speaks at his alma mater, University of Georgia, on compliance-related topics.
@@ -243,7 +250,7 @@ export default function About() {
             Ready to Start Your Compliance Journey?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Let's work together to make compliance your competitive advantage.
+            Let&apos;s work together to make compliance your competitive advantage.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">

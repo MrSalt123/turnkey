@@ -191,7 +191,7 @@ export default function GDPRPage() {
             Ready to Ensure GDPR Compliance?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Let our experts guide you through GDPR compliance and help you protect your customers' data while avoiding costly fines.
+            Let our experts guide you through GDPR compliance and help you protect your customers&apos; data while avoiding costly fines.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">

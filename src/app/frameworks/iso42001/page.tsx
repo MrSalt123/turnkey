@@ -59,7 +59,7 @@ export default function ISO42001Page() {
                 What is ISO 42001?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                ISO 42001 is the world's first international standard for AI management systems. It provides a comprehensive framework for organizations to manage AI systems responsibly, ensuring they are trustworthy, ethical, and aligned with organizational values and regulatory requirements.
+                ISO 42001 is the world&apos;s first international standard for AI management systems. It provides a comprehensive framework for organizations to manage AI systems responsibly, ensuring they are trustworthy, ethical, and aligned with organizational values and regulatory requirements.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 The standard helps organizations address AI risks, ensure transparency, and build stakeholder confidence while fostering innovation in AI development and deployment.

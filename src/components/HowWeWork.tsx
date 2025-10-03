@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { Search, Settings, FileCheck, Users, Infinity } from 'lucide-react';
+import Image from 'next/image';
 
 // --- New Step Card Component ---
 
@@ -48,11 +49,12 @@ const HowWeWork = () => {
             </p>
           </div>
           <div className="hidden lg:flex justify-center items-center">
-            <img 
+            <Image 
               src="/icons/goal.svg" 
               alt="Goal Icon" 
+              width={192}
+              height={192}
               className="w-48 h-48 object-contain"
-              onError={(e) => { e.currentTarget.src = 'https://placehold.co/192x192/svg?text=SVG'; e.currentTarget.onerror = null; }}
             />
           </div>
         </div>
@@ -86,9 +88,11 @@ const HowWeWork = () => {
           {/* Right column - Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <img
+              <Image
                 src="/handshake.jpg"
                 alt="Long-term partnership strategy"
+                width={512}
+                height={384}
                 className="relative z-10 w-full max-w-lg object-cover"
               />
               <div
