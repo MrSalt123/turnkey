@@ -3,10 +3,17 @@ import React from 'react';
 import { Search, Settings, FileCheck, Users } from 'lucide-react';
 import Image from 'next/image';
 
-// --- New Step Card Component ---
+// --- Define a specific type for a process step ---
+interface ProcessStep {
+  id: number;
+  title: string;
+  description: string;
+  icon: React.ReactElement; // Use React.ReactElement for JSX icons
+}
 
-const StepCard = ({ step, stepNumber }: { step: any, stepNumber: string }) => (
-  <div className="bg-white p-6">
+// --- New Step Card Component with the correct type ---
+const StepCard = ({ step, stepNumber }: { step: ProcessStep, stepNumber: string }) => (
+  <div className="bg-white p-6 h-full">
     {/* Step Number and Title */}
     <div className="flex items-center gap-3 mb-4">
       <span className="text-2xl font-bold text-gray-600">
@@ -26,13 +33,13 @@ const StepCard = ({ step, stepNumber }: { step: any, stepNumber: string }) => (
 
 // --- Main Component ---
 
-const processSteps = [
+// --- Apply the type to the array for better type safety ---
+const processSteps: ProcessStep[] = [
   { id: 1, title: 'Gap Analysis', description: 'We learn your business and tech to identify compliance gaps.', icon: <Search /> },
   { id: 2, title: 'Design', description: 'We design practical policies and controls for your unique operations.', icon: <Settings /> },
   { id: 3, title: 'Prep', description: 'We conduct readiness assessments and internal audits.', icon: <FileCheck /> },
   { id: 4, title: 'Coordination', description: 'We manage external auditors and streamline the evidence process.', icon: <Users /> },
 ];
-
 
 const HowWeWork = () => {
   return (
@@ -52,9 +59,10 @@ const HowWeWork = () => {
             <Image 
               src="/icons/goal.svg" 
               alt="Goal Icon" 
+              className="w-48 h-48 object-contain"
               width={192}
               height={192}
-              className="w-48 h-48 object-contain"
+              onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/192x192/svg?text=SVG'; (e.target as HTMLImageElement).onerror = null; }}
             />
           </div>
         </div>
@@ -77,10 +85,10 @@ const HowWeWork = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
           {/* Left column - Content */}
           <div>
-            <h3 className="text-3xl font-bold mb-6 text-gray-900 w-3/4">
+            <h3 className="text-3xl font-bold mb-6 text-gray-900 lg:w-3/4">
               Beyond the Audit: Your Long-Term Partner
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed w-3/4">
+            <p className="text-lg text-gray-600 leading-relaxed lg:w-3/4">
               We provide continuous support to ensure you stay compliant and adapt to evolving regulations and business needs. Our partnership extends far beyond the initial audit, helping you maintain and improve your compliance posture over time.
             </p>
           </div>
@@ -88,12 +96,12 @@ const HowWeWork = () => {
           {/* Right column - Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <Image
+                <Image
                 src="/handshake.jpg"
                 alt="Long-term partnership strategy"
+                className="relative z-10 w-full max-w-lg object-cover"
                 width={512}
                 height={384}
-                className="relative z-10 w-full max-w-lg object-cover"
               />
               <div
                 className="absolute -right-4 -top-4 w-full h-full"
@@ -109,3 +117,4 @@ const HowWeWork = () => {
 };
 
 export default HowWeWork;
+

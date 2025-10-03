@@ -24,8 +24,8 @@ export default function HowWeCanHelp() {
                 src="/help.png"
                 alt="Our Team"
                 className="relative z-10 w-full max-w-lg"
-                width={192}
-                height={192}
+                width={512}
+                height={512}
               />
               {/* Drop shadow background - positioned left and below, 3/4 size */}
               <div

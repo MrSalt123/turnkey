@@ -60,7 +60,7 @@ export default function WhyTurnKey() {
               <div className="relative w-full max-w-lg">
                 {/* Main team strategy image - Replaced Next/Image with standard <img> */}
                 <Image
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+                  src="/teamstrategy.jpg"
                   alt="A team of professionals collaborating on a strategy at a whiteboard"
                   width="500"
                   height={400}                    
