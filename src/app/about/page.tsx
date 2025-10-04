@@ -131,7 +131,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              <h2 className="text-3xl font-bold mb-4">
                 A TurnKey Approach to Compliance
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
@@ -154,7 +154,7 @@ export default function About() {
       <div className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-turnkey)' }}>
+            <h2 className="text-3xl font-bold mb-4">
               By The Numbers
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -164,25 +164,25 @@ export default function About() {
 
           <div id="stats-section" className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <h3 className="text-4xl font-bold mb-2" style={{ color: 'var(--color-turnkey)' }}>
+              <h3 className="text-4xl font-bold mb-2" >
                 {counts.auditPass}%
               </h3>
               <p className="text-gray-600">Audit Pass Rate</p>
             </div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold mb-2" style={{ color: 'var(--color-turnkey)' }}>
+              <h3 className="text-4xl font-bold mb-2">
                 {counts.yearsExperience}+
               </h3>
               <p className="text-gray-600">Years Combined Expertise</p>
             </div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold mb-2" style={{ color: 'var(--color-turnkey)' }}>
+              <h3 className="text-4xl font-bold mb-2">
                 {counts.fasterAudit}%
               </h3>
               <p className="text-gray-600">Faster Time-to-Audit</p>
             </div>
             <div className="text-center">
-              <h3 className="text-4xl font-bold mb-2" style={{ color: 'var(--color-turnkey)' }}>
+              <h3 className="text-4xl font-bold mb-2">
                 &gt;{counts.industriesServed}
               </h3>
               <p className="text-gray-600">Industries Served</p>
@@ -199,7 +199,7 @@ export default function About() {
       <div className="py-16 sm:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-             <h2 className="text-3xl font-bold" style={{ color: 'var(--color-turnkey)' }}>
+             <h2 className="text-3xl font-bold">
                 Meet Our Founder
             </h2>
           </div>
@@ -226,7 +226,7 @@ export default function About() {
                         <Linkedin size={24} />
                     </a>
                 </div>
-                <p className="text-lg font-medium" style={{ color: 'var(--color-turnkey)' }}>
+                <p className="text-lg font-medium">
                     Founder & Principal Consultant
                 </p>
               </div>
