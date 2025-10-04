@@ -13,19 +13,19 @@ interface ProcessStep {
 
 // --- New Step Card Component with the correct type ---
 const StepCard = ({ step, stepNumber }: { step: ProcessStep, stepNumber: string }) => (
-  <div className="bg-background p-6 h-full">
+  <div className="bg-background h-full mb-12">
     {/* Step Number and Title */}
     <div className="flex items-center gap-3 mb-4">
-      <span className="text-2xl font-bold text-gray-600">
+      <span className="text-2xl tabular-nums text-black">
         {stepNumber}
       </span>
-      <h5 className="text-lg font-semibold text-black">
+      <h5 className="text-lg font-semibold text-accent">
         {step.title}
       </h5>
     </div>
     
     {/* Description */}
-    <p className="text-gray-600 text-sm leading-relaxed">
+    <p className="text-gray-600">
       {step.description}
     </p>
   </div>
@@ -82,7 +82,7 @@ const HowWeWork = () => {
         </div>
 
         {/* Beyond the Audit Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-16">
           {/* Left column - Image */}
           <div className="flex justify-center">
             <div className="relative">
@@ -94,7 +94,7 @@ const HowWeWork = () => {
                 height={600}
               />
               <div
-                className="absolute right-2 top-2 md:-right-4 md:-top-4 w-full h-full"
+                className="absolute left-2 bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
                 style={{ backgroundColor: 'var(--color-accent)' }}
               />
             </div>
@@ -102,12 +102,18 @@ const HowWeWork = () => {
           
           {/* Right column - Content */}
           <div>
-            <h3 className="text-3xl font-bold mb-6 text-gray-900 lg:w-3/4">
-              Beyond the Audit: Your Long-Term Partner
+            <h3 className="text-3xl font-bold mb-6 text-gray-900 ">
+              <span className="text-accent">Beyond the Audit:</span> <br />Your Long-Term Partner
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed lg:w-3/4">
+            <p className="text-lg text-gray-600 leading-relaxed lg:w-3/4 mb-6">
               We provide continuous support to ensure you stay compliant and adapt to evolving regulations and business needs. Our partnership extends far beyond the initial audit, helping you maintain and improve your compliance posture over time.
             </p>
+            <a
+              href="/contact"
+              className="inline-block bg-accent text-white px-8 py-3 hover:bg-accent/80 transition-colors rounded-md"
+            >
+              Get Started Today
+            </a>
           </div>
         </div>
 
