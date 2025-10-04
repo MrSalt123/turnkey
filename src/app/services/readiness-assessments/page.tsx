@@ -23,7 +23,7 @@ export default function ReadinessAssessmentsPage() {
                 for any compliance review.
               </p>
               <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
-                Schedule Your Readiness Assessment
+                Get Started
               </Link>
             </div>
             
