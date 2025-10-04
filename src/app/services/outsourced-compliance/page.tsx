@@ -22,15 +22,9 @@ export default function OutsourcedCompliancePage() {
                 We handle everything from policy development to ongoing monitoring, ensuring continuous compliance 
                 without the overhead.
               </p>
-              <div className="relative inline-block">
-                <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Get Started Today
-                </button>
-                <div
-                  className="absolute -right-1 -bottom-1 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+                Get Started Today
+              </button>
             </div>
             
             {/* Right column - Image */}

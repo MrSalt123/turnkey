@@ -39,7 +39,7 @@ export default function Header() {
                 alt="TurnKey Compliance"
                 width={150}
                 height={50}
-                className="h-11 w-auto"
+                className="h-8 md:h-11 w-auto"
               />
             </Link>
           </div>
@@ -128,7 +128,7 @@ export default function Header() {
               </Link>
               <Link
                 href="/contact"
-                className="px-4 py-2 rounded-full text-white font-medium transition-colors duration-200 uppercase"
+                className="px-4 py-2 rounded-md text-white font-medium transition-colors duration-200 uppercase"
                 style={{ backgroundColor: 'var(--color-accent)' }}
               >
                 Contact Us

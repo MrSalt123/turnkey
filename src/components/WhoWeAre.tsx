@@ -2,7 +2,7 @@ import { Building2, ShieldCheck, Factory, TrendingUp } from 'lucide-react';
 
 export default function WhoWeAre() {
   return (
-    <div className="py-12 md:py-24 bg-white">
+    <div className="py-12 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Heading */}
         <div className="md:text-center mb-4">

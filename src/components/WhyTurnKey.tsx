@@ -27,7 +27,7 @@ const benefits = [
 
 export default function WhyTurnKey() {
   return (
-    <div className="py-20 sm:py-24 bg-white">
+    <div className="py-20 sm:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -75,8 +75,8 @@ export default function WhyTurnKey() {
               </div>
             </div>
 
-            {/* Right side: Benefit List (replaces the 2x2 grid) */}
-            <div className="flex flex-col gap-8">
+            {/* Right side: Benefit List as 2x2 Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <div className="flex-shrink-0 mt-1">

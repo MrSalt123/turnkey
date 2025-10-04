@@ -86,26 +86,26 @@ export default function About() {
                 Our deep industry knowledge, rooted in Big Four philosophies, becomes your strategic advantage.<br /><br />
                 Founded on the principle of simplifying the audit process, our mission is to empower your business.
               </p>
-              <div className="relative inline-block">
-                <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Connect with Us
-                </button>
-                <div
-                  className="absolute -right-1 -bottom-1 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md" >
+                Connect with Us
+              </button>
             </div>
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <Image
-                src="/about.webp"
-                alt="About TurnKey Compliance"
-                width={512}
-                height={448}
-                className="w-2/3 max-w-lg object-cover h-112"
-              />
+              <div className="relative">
+                <Image
+                  src="/teamstrategy.jpg"
+                  alt="About TurnKey Compliance"
+                  width={512}
+                  height={448}
+                  className="relative z-10 w-full max-w-lg object-cover h-112"
+                />
+                <div
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
+                  style={{ backgroundColor: 'var(--color-accent)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function About() {
                   className="relative z-10 w-full h-auto object-cover max-w-lg aspect-[4/3]"
                 />
                 <div
-                  className="absolute -left-4 -bottom-4 w-full h-full"
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
                   style={{ backgroundColor: 'var(--color-accent)' }}
                 />
               </div>
@@ -138,10 +138,10 @@ export default function About() {
                 TurnKey Compliance takes a collaborative, personalized approach to your security, partnering with you to create programs that meet industry standards. Our goal is to manage the complexities of the audit process on your behalf, allowing you to concentrate on your business.
               </p>
               <div className="flex flex-wrap gap-4">
-                 <button className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors">
+                 <button className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors rounded-md">
                     Get Started
                 </button>
-                <button className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors">
+                <button className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
                     Our Services
                 </button>
               </div>
@@ -206,7 +206,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex justify-center">
               <div className="relative">
-                <div className="absolute -left-4 -top-4 w-full h-full bg-accent z-0 "></div>
+                <div className="absolute -left-2 -top-2 md:-left-4 md:-top-4 w-full h-full bg-accent z-0"></div>
                 <Image
                     src="/jason.avif"
                     alt="Jason - Founder of TurnKey Compliance"
@@ -253,10 +253,10 @@ export default function About() {
             Let&apos;s work together to make compliance your competitive advantage.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
               Get Started
             </button>
-            <button className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors">
+            <button className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-md">
               Learn More
             </button>
           </div>

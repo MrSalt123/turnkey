@@ -26,26 +26,26 @@ export default function ServicesPage() {
                 From gap analysis to ongoing advisory support, we help you build a robust compliance program 
                 that protects your business and accelerates growth.
               </p>
-              <div className="relative inline-block">
-                <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Get Started Today
-                </button>
-                <div
-                  className="absolute -right-1 -bottom-1 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+                Get Started Today
+              </button>
             </div>
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <Image
-                src="/strategy.jpg"
-                alt="Compliance Services"
-                width={512}
-                height={448}
-                className="w-2/3 max-w-lg object-cover h-112"
-              />
+              <div className="relative">
+                <Image
+                  src="/teamstrategy.jpg"
+                  alt="Compliance Services"
+                  width={512}
+                  height={448}
+                  className="relative z-10 w-full max-w-lg object-cover h-112"
+                />
+                <div
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
+                  style={{ backgroundColor: 'var(--color-accent)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Who We Help Section */}
-      <div className="py-24 bg-white">
+      <div className="py-12 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -236,7 +236,7 @@ export default function ServicesPage() {
                 />
                 {/* Drop shadow background - positioned left and below, 3/4 size */}
                 <div
-                  className="absolute -left-4 -bottom-4 w-full h-full overflow-hidden"
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full overflow-hidden"
                   style={{ backgroundColor: 'var(--color-accent)' }}
                 >
                 </div>

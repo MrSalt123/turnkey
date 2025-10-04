@@ -22,15 +22,9 @@ export default function GapAnalysisPage() {
                 across your people, processes, and technology, giving you a clear roadmap to audit readiness and 
                 regulatory compliance.
               </p>
-              <div className="relative inline-block">
-                <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Schedule Your Gap Analysis
-                </button>
-                <div
-                  className="absolute -right-1 -bottom-1 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+                Schedule Your Gap Analysis
+              </button>
             </div>
             
             {/* Right column - Image */}

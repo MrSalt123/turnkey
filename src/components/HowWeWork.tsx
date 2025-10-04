@@ -13,7 +13,7 @@ interface ProcessStep {
 
 // --- New Step Card Component with the correct type ---
 const StepCard = ({ step, stepNumber }: { step: ProcessStep, stepNumber: string }) => (
-  <div className="bg-white p-6 h-full">
+  <div className="bg-background p-6 h-full">
     {/* Step Number and Title */}
     <div className="flex items-center gap-3 mb-4">
       <span className="text-2xl font-bold text-gray-600">
@@ -43,7 +43,7 @@ const processSteps: ProcessStep[] = [
 
 const HowWeWork = () => {
   return (
-    <div className="py-24 bg-white">
+    <div className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-20">
@@ -82,7 +82,7 @@ const HowWeWork = () => {
         </div>
 
         {/* Beyond the Audit Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mt-16">
           {/* Left column - Image */}
           <div className="flex justify-center">
             <div className="relative">

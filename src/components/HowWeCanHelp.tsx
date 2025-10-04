@@ -13,7 +13,7 @@ export default function HowWeCanHelp() {
   ];
 
   return (
-    <section className="py-12 md:py-24 bg-white">
+    <section className="py-12 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Centered heading above the grid */}
         <div className="md:text-center mb-8 md:mb-16">

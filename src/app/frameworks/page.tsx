@@ -101,33 +101,33 @@ export default function Frameworks() {
                 Navigate the complex world of compliance with confidence. Our expertise spans the most critical frameworks that protect your business and build trust with your stakeholders.<br /><br />
                 From cybersecurity to data privacy, financial controls to healthcare compliance, we help you implement the right frameworks for your industry and growth stage.
               </p>
-              <div className="relative inline-block">
-                <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Get Framework Assessment
-                </button>
-                <div
-                  className="absolute -right-1 -bottom-1 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+                Get Framework Assessment
+              </button>
             </div>
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <Image
-                src="/strategy.jpg"
-                alt="Compliance Frameworks"
-                width={512}
-                height={448}
-                className="w-2/3 max-w-lg object-cover h-112"
-              />
+              <div className="relative">
+                <Image
+                  src="/teamstrategy.jpg"
+                  alt="Compliance Frameworks"
+                  width={512}
+                  height={448}
+                  className="relative z-10 w-full max-w-lg object-cover h-112"
+                />
+                <div
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
+                  style={{ backgroundColor: 'var(--color-accent)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Frameworks Grid Section */}
-      <div className="py-24 bg-white">
+      <div className="py-12 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -196,7 +196,7 @@ export default function Frameworks() {
             Let our experts guide you through the compliance journey that&apos;s right for your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-gray-900 px-4 md:px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
               Start Assessment
             </button>
             <button className="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
