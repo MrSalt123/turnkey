@@ -46,7 +46,7 @@ const HowWeWork = () => {
     <div className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-12 md:mb-20">
           <div className="lg:col-span-2">
             <h2 className="text-4xl font-bold mb-4">
               Your Journey to Compliance
@@ -68,7 +68,7 @@ const HowWeWork = () => {
         </div>
 
         {/* Four Step Cards */}
-        <div className="mb-16">
+        <div className="">
           {/* Step Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6">
             {processSteps.map((step, index) => (
@@ -82,10 +82,10 @@ const HowWeWork = () => {
         </div>
 
         {/* Beyond the Audit Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-8">
           {/* Left column - Image */}
           <div className="flex justify-center">
-            <div className="relative">
+            <div className="relative w-full max-w-lg lg:max-w-none">
                 <Image
                 src="/handshake.jpg"
                 alt="Long-term partnership strategy"

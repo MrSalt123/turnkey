@@ -54,7 +54,7 @@ export default function TechStack() {
 
          {/* Tech Stack Logo Cloud */}
          <div className="mt-12">
-           <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-8">
+           <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-8">
              {techStackLogos.map((logo, index) => (
                <div key={index} className="h-16 w-24 flex items-center justify-center">
                  <Image

@@ -4,22 +4,22 @@ import Image from 'next/image';
 // Updated benefits array with unique icons for each
 const benefits = [
   {
-    icon: <Scale className="w-7 h-7 text-black" aria-hidden="true" />,
+    icon: <Scale className="w-5 h-5 md:w-7 md:h-7 text-black" aria-hidden="true" />,
     title: "Unbiased Assessments",
     description: "Get a clear, objective view of your security and compliance posture."
   },
   {
-    icon: <GanttChartSquare className="w-7 h-7 text-black" aria-hidden="true" />,
+    icon: <GanttChartSquare className="w-5 h-5 md:w-7 md:h-7 text-black" aria-hidden="true" />,
     title: "Framework Efficiency",
     description: "Save time and resources by aligning controls across multiple standards at once."
   },
   {
-    icon: <ShieldCheck className="w-7 h-7 text-black" aria-hidden="true" />,
+    icon: <ShieldCheck className="w-5 h-5 md:w-7 md:h-7 text-black" aria-hidden="true" />,
     title: "Lasting Audit Resilience",
     description: "Build sustainable programs for year-round compliance confidence, not just one-time prep."
   },
   {
-    icon: <Users className="w-7 h-7 text-black" aria-hidden="true" />,
+    icon: <Users className="w-5 h-5 md:w-7 md:h-7 text-black" aria-hidden="true" />,
     title: "Team Education & Adoption",
     description: "Strengthen your security culture with tailored training that boosts workforce adoption."
   }

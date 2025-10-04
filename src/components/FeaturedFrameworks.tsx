@@ -104,7 +104,7 @@ const FeaturedFrameworks = () => {
             <div
               key={framework.title}
               className="
-                bg-white p-8 
+                bg-white p-4 md:p-8 
                 border-2 border-black
                 transition-all duration-300 hover:shadow-lg hover:border-gray-300
                 flex flex-col h-full
@@ -139,10 +139,10 @@ const FeaturedFrameworks = () => {
               <div
                 key={framework.title}
                 className="
-                  bg-white p-6 
+                  bg-white p-4 md:p-6 
                   border-2 border-black
                   transition-all duration-300 hover:shadow-lg hover:border-gray-300
-                  flex flex-col h-80
+                  flex flex-col
                   w-80 flex-shrink-0
                 "
                 style={{

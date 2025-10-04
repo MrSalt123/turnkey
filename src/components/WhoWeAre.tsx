@@ -23,7 +23,7 @@ export default function WhoWeAre() {
           
           {/* Card 1: Big Four Background */}
           <div
-            className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
+            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
             style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
           >
             <div className="flex items-center gap-4 mb-4">
@@ -40,7 +40,7 @@ export default function WhoWeAre() {
 
           {/* Card 2: Certified Expertise */}
           <div
-            className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
+            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
             style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
           >
             <div className="flex items-center gap-4 mb-4">
@@ -56,7 +56,7 @@ export default function WhoWeAre() {
 
           {/* Card 3: Industry Knowledge */}
           <div
-            className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
+            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
             style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
           >
             <div className="flex items-center gap-4 mb-4">
@@ -73,7 +73,7 @@ export default function WhoWeAre() {
 
           {/* Card 4: Scalable Success */}
           <div
-            className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
+            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
             style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
           >
             <div className="flex items-center gap-4 mb-4">
