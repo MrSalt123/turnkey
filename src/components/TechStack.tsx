@@ -72,8 +72,8 @@ export default function TechStack() {
          {/* Optional secondary button, styled like your hero section */}
          <div className="mt-16 text-center">
            <a
-             href="#contact"
-             className="inline-block px-8 py-3 border border-white rounded-full text-base font-medium text-white hover:bg-white hover:text-gray-900 transition-colors"
+             href="/contact"
+             className="inline-block px-8 py-3 border border-white rounded-md text-base font-medium text-white hover:bg-white hover:text-gray-900 transition-colors"
            >
              Discuss Your Environment
            </a>

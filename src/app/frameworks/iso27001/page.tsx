@@ -69,20 +69,20 @@ export default function ISO27001Page() {
               <h2 className="text-xl font-bold mb-6 text-gray-900">Key Benefits</h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">International recognition and credibility</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">International recognition and credibility</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Risk-based approach to security</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Risk-based approach to security</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Continuous improvement framework</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Continuous improvement framework</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Reduces security incidents</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Reduces security incidents</p>
                 </li>
               </ul>
             </div>

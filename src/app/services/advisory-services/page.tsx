@@ -22,9 +22,9 @@ export default function AdvisoryServicesPage() {
                 and make informed decisions. Our advisory services provide the strategic insight you need to 
                 build and maintain a robust compliance program.
               </p>
-              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+              <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
                 Schedule Your Consultation
-              </button>
+              </Link>
             </div>
             
             {/* Right column - Image */}

@@ -69,20 +69,20 @@ export default function GDPRPage() {
               <h2 className="text-xl font-bold mb-6 text-gray-900">Key Benefits</h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Enhanced customer trust and loyalty</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700 text-lg">Enhanced customer trust and loyalty</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Competitive advantage in EU markets</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Competitive advantage in EU markets</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Reduced risk of hefty fines</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Reduced risk of hefty fines</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Improved data governance</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Improved data governance</p>
                 </li>
               </ul>
             </div>

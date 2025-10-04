@@ -22,9 +22,9 @@ export default function GapAnalysisPage() {
                 across your people, processes, and technology, giving you a clear roadmap to audit readiness and 
                 regulatory compliance.
               </p>
-              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+              <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
                 Schedule Your Gap Analysis
-              </button>
+              </Link>
             </div>
             
             {/* Right column - Image */}

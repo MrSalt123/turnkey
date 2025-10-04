@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { ShieldCheck, Cpu, ClipboardCheck, Database, FileText, Heart, Lock, CreditCard, Brain } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Framework icon component that renders different icons based on the framework
 const FrameworkIcon = ({ framework }: { framework: string }) => {
@@ -196,12 +197,9 @@ export default function Frameworks() {
             Let our experts guide you through the compliance journey that&apos;s right for your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-white text-gray-900 px-4 md:px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
-              Start Assessment
-            </button>
-            <button className="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
+            <Link href="/contact" className="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
               Schedule Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </div>

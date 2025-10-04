@@ -26,9 +26,9 @@ export default function ServicesPage() {
                 From gap analysis to ongoing advisory support, we help you build a robust compliance program 
                 that protects your business and accelerates growth.
               </p>
-              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+              <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
                 Get Started Today
-              </button>
+              </Link>
             </div>
             
             {/* Right column - Image */}

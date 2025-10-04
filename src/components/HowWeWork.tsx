@@ -16,10 +16,10 @@ const StepCard = ({ step, stepNumber }: { step: ProcessStep, stepNumber: string 
   <div className="bg-background h-full mb-12">
     {/* Step Number and Title */}
     <div className="flex items-center gap-3 mb-4">
-      <span className="text-2xl tabular-nums text-black">
+      <span className="text-2xl tabular-nums text-black/70">
         {stepNumber}
       </span>
-      <h5 className="text-lg font-semibold text-accent">
+      <h5 className="text-lg font-semibold">
         {step.title}
       </h5>
     </div>
@@ -82,7 +82,7 @@ const HowWeWork = () => {
         </div>
 
         {/* Beyond the Audit Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-8">
           {/* Left column - Image */}
           <div className="flex justify-center">
             <div className="relative w-full max-w-lg lg:max-w-none">

@@ -69,20 +69,20 @@ export default function SOC2Page() {
               <h2 className="text-gray-900 mb-6">Key Benefits</h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Builds customer trust and confidence</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Builds customer trust and confidence</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Competitive advantage in sales</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Competitive advantage in sales</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Identifies security gaps early</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Identifies security gaps early</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Reduces audit costs over time</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Reduces audit costs over time</p>
                 </li>
               </ul>
             </div>

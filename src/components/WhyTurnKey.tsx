@@ -34,11 +34,11 @@ export default function WhyTurnKey() {
         <div className="flex justify-between items-end mb-12 lg:mb-32">
             {/* Left: Heading */}
             <div>
-                <h2 className="text-accent">
+                <h2>
                 More Than Compliance.
                 </h2>
                 <h2>
-                We Drive Business Confidence.
+                We Drive <span className="text-accent">Business Confidence.</span>
                 </h2>
             </div>
 
@@ -83,7 +83,7 @@ export default function WhyTurnKey() {
                     {benefit.icon}
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold text-accent mb-1">{benefit.title}</h5>
+                    <h5 className="mb-1">{benefit.title}</h5>
                     <p className="text-base text-gray-600">{benefit.description}</p>
                   </div>
                 </div>

@@ -60,20 +60,20 @@ export default function PCIPage() {
               </h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Reduced risk of data breaches</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Reduced risk of data breaches</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Lower fraud-related costs</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Lower fraud-related costs</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Enhanced customer trust</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Enhanced customer trust</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Compliance with card brand requirements</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Compliance with card brand requirements</p>
                 </li>
               </ul>
             </div>

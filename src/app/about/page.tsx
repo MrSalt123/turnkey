@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import ValuesSection from '@/components/ValuesSection';
 
 export default function About() {
@@ -86,9 +87,9 @@ export default function About() {
                 Our deep industry knowledge, rooted in Big Four philosophies, becomes your strategic advantage.<br /><br />
                 Founded on the principle of simplifying the audit process, our mission is to empower your business.
               </p>
-              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md" >
+              <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md" >
                 Connect with Us
-              </button>
+              </Link>
             </div>
             
             {/* Right column - Image */}
@@ -138,12 +139,12 @@ export default function About() {
                 TurnKey Compliance takes a collaborative, personalized approach to your security, partnering with you to create programs that meet industry standards. Our goal is to manage the complexities of the audit process on your behalf, allowing you to concentrate on your business.
               </p>
               <div className="flex flex-wrap gap-4">
-                 <button className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors rounded-md">
+                 <Link href="/contact" className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors rounded-md">
                     Get Started
-                </button>
-                <button className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
+                </Link>
+                <Link href="/services" className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
                     Our Services
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -253,12 +254,12 @@ export default function About() {
             Let&apos;s work together to make compliance your competitive advantage.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
+            <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
               Get Started
-            </button>
-            <button className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-md">
+            </Link>
+            <Link href="/services" className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-md">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </div>

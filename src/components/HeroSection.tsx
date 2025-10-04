@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -40,12 +41,12 @@ export default function HeroSection() {
                We go beyond consulting to become a true extension of your team, delivering personalized compliance programs that align with your business goals and growth stage.
             </p>
             <div className="flex md:flex-wrap gap-4">
-              <button className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+              <Link href="/contact" className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
                 Let&apos;s Talk
-              </button>
-              <button className="border border-white text-white px-4 md:px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-md">
-                See How We Work
-              </button>
+              </Link>
+              <Link href="/about" className="border border-white text-white px-4 md:px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-md">
+                About Us
+              </Link>
             </div>
           </div>
           

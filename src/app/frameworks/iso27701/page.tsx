@@ -69,20 +69,20 @@ export default function ISO27701Page() {
               <h2 className="text-xl font-bold mb-6 text-gray-900">Key Benefits</h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Enhanced privacy protection</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Enhanced privacy protection</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">GDPR and CCPA compliance support</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">GDPR and CCPA compliance support</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Integrated with ISO 27001</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Integrated with ISO 27001</p>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <span className="text-gray-700">Reduced privacy risks</span>
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Reduced privacy risks</p>
                 </li>
               </ul>
             </div>
