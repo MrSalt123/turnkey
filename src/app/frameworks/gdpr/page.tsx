@@ -51,11 +51,11 @@ export default function GDPRPage() {
       </div>
 
       {/* Overview Section */}
-      <div className="py-16 bg-white">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              <h2 className="text-gray-900 mb-6">
                 What is GDPR?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
@@ -91,10 +91,10 @@ export default function GDPRPage() {
       </div>
 
       {/* Key Principles */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <h2 className="text-gray-900 mb-4">
               Key GDPR Principles
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -104,9 +104,9 @@ export default function GDPRPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Lawfulness */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Lawfulness
                 </h4>
@@ -117,9 +117,9 @@ export default function GDPRPage() {
             </div>
 
             {/* Purpose Limitation */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Eye size={32} className="text-blue-600" />
+                <Eye size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Purpose Limitation
                 </h4>
@@ -130,9 +130,9 @@ export default function GDPRPage() {
             </div>
 
             {/* Data Minimization */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <UserCheck size={32} className="text-blue-600" />
+                <UserCheck size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Data Minimization
                 </h4>
@@ -143,9 +143,9 @@ export default function GDPRPage() {
             </div>
 
             {/* Accuracy */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <AlertCircle size={32} className="text-blue-600" />
+                <AlertCircle size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Accuracy
                 </h4>
@@ -156,9 +156,9 @@ export default function GDPRPage() {
             </div>
 
             {/* Storage Limitation */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Database size={32} className="text-blue-600" />
+                <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Storage Limitation
                 </h4>
@@ -169,9 +169,9 @@ export default function GDPRPage() {
             </div>
 
             {/* Integrity & Confidentiality */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Integrity & Confidentiality
                 </h4>

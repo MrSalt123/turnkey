@@ -51,11 +51,11 @@ export default function NIST800171Page() {
       </div>
 
       {/* Overview Section */}
-      <div className="py-16 bg-white">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              <h2 className="text-gray-900 mb-6">
                 What is NIST 800-171?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
@@ -66,7 +66,7 @@ export default function NIST800171Page() {
               </p>
             </div>
             <div className="h-full">
-              <h2 className="text-xl font-bold mb-6 text-gray-900">Key Benefits</h2>
+              <h2 className="text-gray-900 mb-6">Key Benefits</h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
@@ -91,10 +91,10 @@ export default function NIST800171Page() {
       </div>
 
       {/* Control Families */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <h2 className="text-gray-900 mb-4">
               Key Control Families
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -104,9 +104,9 @@ export default function NIST800171Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Access Control */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Lock size={32} className="text-blue-600" />
+                <Lock size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Access Control
                 </h4>
@@ -117,9 +117,9 @@ export default function NIST800171Page() {
             </div>
 
             {/* Awareness Training */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Users size={32} className="text-blue-600" />
+                <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Awareness Training
                 </h4>
@@ -130,9 +130,9 @@ export default function NIST800171Page() {
             </div>
 
             {/* Audit & Accountability */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Database size={32} className="text-blue-600" />
+                <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Audit & Accountability
                 </h4>
@@ -143,9 +143,9 @@ export default function NIST800171Page() {
             </div>
 
             {/* Configuration Management */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Settings size={32} className="text-blue-600" />
+                <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Configuration Management
                 </h4>
@@ -156,9 +156,9 @@ export default function NIST800171Page() {
             </div>
 
             {/* Incident Response */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Incident Response
                 </h4>
@@ -169,9 +169,9 @@ export default function NIST800171Page() {
             </div>
 
             {/* System & Communications Protection */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   System Protection
                 </h4>

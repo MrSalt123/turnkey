@@ -51,7 +51,7 @@ export default function ISO27001Page() {
       </div>
 
       {/* Overview Section */}
-      <div className="py-16 bg-white">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -91,7 +91,7 @@ export default function ISO27001Page() {
       </div>
 
       {/* Core Components */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gray-900">
@@ -104,9 +104,9 @@ export default function ISO27001Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Risk Management */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <AlertTriangle size={32} className="text-blue-600" />
+                <AlertTriangle size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Risk Management
                 </h4>
@@ -117,9 +117,9 @@ export default function ISO27001Page() {
             </div>
 
             {/* Security Controls */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Security Controls
                 </h4>
@@ -130,9 +130,9 @@ export default function ISO27001Page() {
             </div>
 
             {/* Management System */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Settings size={32} className="text-blue-600" />
+                <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Management System
                 </h4>
@@ -143,9 +143,9 @@ export default function ISO27001Page() {
             </div>
 
             {/* People & Training */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Users size={32} className="text-blue-600" />
+                <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   People & Training
                 </h4>
@@ -161,7 +161,7 @@ export default function ISO27001Page() {
       {/* CTA Section */}
       <div className="py-16" style={{ backgroundColor: 'var(--color-turnkey)' }}>
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-white text-3xl font-bold mb-6">
+          <h2 className="text-white text-gray-900 mb-6">
             Ready to Implement ISO 27001?
           </h2>
           <p className="text-white/90 text-lg mb-8">

@@ -51,11 +51,11 @@ export default function SOX404Page() {
       </div>
 
       {/* Overview Section */}
-      <div className="py-16 bg-white">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              <h2 className="text-gray-900 mb-6">
                 What is SOX 404?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
@@ -66,7 +66,7 @@ export default function SOX404Page() {
               </p>
             </div>
             <div className="h-full">
-              <h2 className="text-xl font-bold mb-6 text-gray-900">Key Benefits</h2>
+              <h2 className="text-gray-900 mb-6">Key Benefits</h2>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 mr-3" style={{ color: 'var(--color-accent)' }} />
@@ -91,10 +91,10 @@ export default function SOX404Page() {
       </div>
 
       {/* Core Components */}
-      <div className="py-16 bg-gray-50">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <h2 className="text-gray-900 mb-4">
               Core Components of SOX 404
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -104,9 +104,9 @@ export default function SOX404Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Management Assessment */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Users size={32} className="text-blue-600" />
+                <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Management Assessment
                 </h4>
@@ -117,9 +117,9 @@ export default function SOX404Page() {
             </div>
 
             {/* Internal Controls */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Internal Controls
                 </h4>
@@ -130,9 +130,9 @@ export default function SOX404Page() {
             </div>
 
             {/* Documentation */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <FileText size={32} className="text-blue-600" />
+                <FileText size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Documentation
                 </h4>
@@ -143,9 +143,9 @@ export default function SOX404Page() {
             </div>
 
             {/* Testing & Monitoring */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <BarChart size={32} className="text-blue-600" />
+                <BarChart size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Testing & Monitoring
                 </h4>
@@ -156,9 +156,9 @@ export default function SOX404Page() {
             </div>
 
             {/* Deficiency Management */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <AlertTriangle size={32} className="text-blue-600" />
+                <AlertTriangle size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Deficiency Management
                 </h4>
@@ -169,9 +169,9 @@ export default function SOX404Page() {
             </div>
 
             {/* Audit Coordination */}
-            <div className="bg-white p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-blue-600" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Audit Coordination
                 </h4>

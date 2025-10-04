@@ -156,7 +156,7 @@ export default function Frameworks() {
             {frameworks.map((framework) => (
               <div
                 key={framework.title}
-                className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
+                className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
                 style={{
                   boxShadow: hoveredCard === framework.title 
                     ? '8px 8px 0px var(--color-accent), 8px 8px 0px 2px #000000'
