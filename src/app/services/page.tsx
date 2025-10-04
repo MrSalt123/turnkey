@@ -80,7 +80,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Gap Analysis Card */}
             <div
-              className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
+              className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
               style={{
                 boxShadow: hoveredCard === 'gap-analysis' 
                   ? '8px 8px 0px var(--color-accent), 8px 8px 0px 2px #000000'
@@ -109,7 +109,7 @@ export default function ServicesPage() {
 
             {/* Readiness Assessments Card */}
             <div
-              className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
+              className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
               style={{
                 boxShadow: hoveredCard === 'readiness-assessments' 
                   ? '8px 8px 0px var(--color-accent), 8px 8px 0px 2px #000000'
@@ -138,7 +138,7 @@ export default function ServicesPage() {
 
             {/* Outsourced Compliance Card */}
             <div
-              className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
+              className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
               style={{
                 boxShadow: hoveredCard === 'outsourced-compliance' 
                   ? '8px 8px 0px var(--color-accent), 8px 8px 0px 2px #000000'
@@ -167,7 +167,7 @@ export default function ServicesPage() {
 
             {/* Advisory Services Card */}
             <div
-              className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
+              className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
               style={{
                 boxShadow: hoveredCard === 'advisory-services' 
                   ? '8px 8px 0px var(--color-accent), 8px 8px 0px 2px #000000'
