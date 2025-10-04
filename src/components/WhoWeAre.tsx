@@ -2,18 +2,18 @@ import { Building2, ShieldCheck, Factory, TrendingUp } from 'lucide-react';
 
 export default function WhoWeAre() {
   return (
-    <div className="py-16 bg-white">
+    <div className="py-12 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Heading */}
-        <div className="text-center mb-12">
+        <div className="md:text-center mb-4">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Real Experts. <span style={{ color: 'var(--color-accent)' }}>Real Impact.</span>
+            <span className="block sm:inline">Real Experts.</span> <span className="block sm:inline" style={{ color: 'var(--color-accent)' }}>Real Impact.</span>
           </h2>
         </div>
 
         {/* Introductory Paragraph */}
         <div className="max-w-4xl mx-auto mb-16">
-          <p className="text-lg text-gray-600 leading-relaxed text-center">
+          <p className="text-lg text-gray-600 leading-relaxed md:text-center">
             We go beyond consulting to become a true extension of your team. Our guidance is delivered by seasoned professionals who translate complex compliance requirements into practical, business-aligned solutions.
           </p>
         </div>

@@ -68,7 +68,7 @@ export default function WhyTurnKey() {
                 />
                 {/* Decorative background element */}
                 <div
-                  className="absolute -left-4 -bottom-4 w-full h-full z-0"
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full z-0"
                   style={{ backgroundColor: 'var(--color-accent)' }}
                 >
                 </div>

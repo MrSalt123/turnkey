@@ -82,8 +82,25 @@ const HowWeWork = () => {
         </div>
 
         {/* Beyond the Audit Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
-          {/* Left column - Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-16">
+          {/* Left column - Image */}
+          <div className="flex justify-center">
+            <div className="relative">
+                <Image
+                src="/handshake.jpg"
+                alt="Long-term partnership strategy"
+                className="relative z-10 w-full object-cover"
+                width={800}
+                height={600}
+              />
+              <div
+                className="absolute right-2 top-2 md:-right-4 md:-top-4 w-full h-full"
+                style={{ backgroundColor: 'var(--color-accent)' }}
+              />
+            </div>
+          </div>
+          
+          {/* Right column - Content */}
           <div>
             <h3 className="text-3xl font-bold mb-6 text-gray-900 lg:w-3/4">
               Beyond the Audit: Your Long-Term Partner
@@ -91,23 +108,6 @@ const HowWeWork = () => {
             <p className="text-lg text-gray-600 leading-relaxed lg:w-3/4">
               We provide continuous support to ensure you stay compliant and adapt to evolving regulations and business needs. Our partnership extends far beyond the initial audit, helping you maintain and improve your compliance posture over time.
             </p>
-          </div>
-          
-          {/* Right column - Image */}
-          <div className="flex justify-center">
-            <div className="relative">
-                <Image
-                src="/handshake.jpg"
-                alt="Long-term partnership strategy"
-                className="relative z-10 w-full max-w-lg object-cover"
-                width={512}
-                height={384}
-              />
-              <div
-                className="absolute -right-4 -top-4 w-full h-full"
-                style={{ backgroundColor: 'var(--color-accent)' }}
-              />
-            </div>
           </div>
         </div>
 

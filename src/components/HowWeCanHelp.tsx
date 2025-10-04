@@ -13,8 +13,15 @@ export default function HowWeCanHelp() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Centered heading above the grid */}
+        <div className="md:text-center mb-8 md:mb-16">
+          <h2 className="text-4xl font-bold text-gray-900">
+            How TurnKey Can Help
+          </h2>
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Team image with drop shadow */}
           <div className="relative flex justify-center">
@@ -29,18 +36,15 @@ export default function HowWeCanHelp() {
               />
               {/* Drop shadow background - positioned left and below, 3/4 size */}
               <div
-                className="absolute -left-4 -bottom-4 w-full h-full overflow-hidden"
+                className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full overflow-hidden"
                 style={{ backgroundColor: 'var(--color-accent)' }}
               >
               </div>
             </div>
           </div>
 
-          {/* Right column - Text content */}
+          {/* Right column - Services list */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-6 text-gray-900">
-              How TurnKey Can Help
-            </h2>
             <ul className="space-y-6"> {/* Increased space-y for better readability */}
               {services.map((service, index) => (
                 <li key={index} className="flex items-center gap-3">

@@ -29,7 +29,7 @@ export default function Header() {
         boxShadow: isScrolled ? '0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1)' : 'none'
       }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20 py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
