@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ContactPage() {
@@ -61,7 +60,7 @@ export default function ContactPage() {
                 Get In Touch
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We understand that compliance can be complex and overwhelming. Our team of experts is ready to guide you through every step of the audit process, from initial assessment to final certification. When you reach out to us, we'll respond promptly and provide you with personalized guidance tailored to your specific business needs and compliance requirements.
+                We understand that compliance can be complex and overwhelming. Our team of experts is ready to guide you through every step of the audit process, from initial assessment to final certification. When you reach out to us, we&apos;ll respond promptly and provide you with personalized guidance tailored to your specific business needs and compliance requirements.
               </p>
             </div>
             
