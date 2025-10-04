@@ -116,7 +116,7 @@ export default function ReadinessAssessmentsPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
@@ -128,7 +128,7 @@ export default function ReadinessAssessmentsPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
@@ -140,7 +140,7 @@ export default function ReadinessAssessmentsPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
@@ -152,7 +152,7 @@ export default function ReadinessAssessmentsPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
@@ -164,7 +164,7 @@ export default function ReadinessAssessmentsPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
@@ -176,7 +176,7 @@ export default function ReadinessAssessmentsPage() {
               </p>
             </div>
             
-            <div className="bg-white p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>

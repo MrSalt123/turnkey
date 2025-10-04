@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Security icon for SOC 2
 const SecurityIcon = () => (
@@ -60,14 +61,17 @@ const frameworks = [
   {
     title: 'SOC 2',
     description: 'Assessments that examine internal controls relevant to security, availability, processing integrity, confidentiality, and privacy.',
+    path: '/frameworks/soc2',
   },
   {
     title: 'ISO 27001',
     description: 'International standards focusing on information security, quality management, and AI and Machine Learning (ML).',
+    path: '/frameworks/iso27001',
   },
   {
     title: 'ISO 27701',
     description: 'A privacy extension to ISO 27001, providing guidance on protecting personal data and ensuring privacy compliance.',
+    path: '/frameworks/iso27701',
   },
 ];
 
@@ -122,12 +126,12 @@ const FeaturedFrameworks = () => {
               <p className="text-gray-600 text-base mb-6 flex-grow">
                 {framework.description}
               </p>
-              <a
-                href="/frameworks"
+              <Link
+                href={framework.path}
                 className="text-black font-medium hover:underline transition-colors text-right"
               >
                 Learn More &gt;
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -158,12 +162,12 @@ const FeaturedFrameworks = () => {
                 <p className="text-gray-600 text-sm mb-4 flex-grow">
                   {framework.description}
                 </p>
-                <a
-                  href="/frameworks"
+                <Link
+                  href={framework.path}
                   className="text-black font-medium hover:underline transition-colors text-right"
                 >
                   Learn More &gt;
-                </a>
+                </Link>
               </div>
             ))}
           </div>
