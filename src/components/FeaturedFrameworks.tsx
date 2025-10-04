@@ -98,8 +98,8 @@ const FeaturedFrameworks = () => {
           </div>
         </div>
 
-        {/* 3-Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 3-Card Grid - Responsive Layout */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {frameworks.map((framework) => (
             <div
               key={framework.title}
@@ -130,6 +130,43 @@ const FeaturedFrameworks = () => {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* Mobile Horizontal Scroll */}
+        <div className="md:hidden">
+          <div className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            {frameworks.map((framework) => (
+              <div
+                key={framework.title}
+                className="
+                  bg-white p-6 
+                  border-2 border-black
+                  transition-all duration-300 hover:shadow-lg hover:border-gray-300
+                  flex flex-col h-80
+                  w-80 flex-shrink-0
+                "
+                style={{
+                  boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000'
+                }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <FrameworkIcon framework={framework.title} />
+                  <h4 className="text-lg font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
+                    {framework.title}
+                  </h4>
+                </div>
+                <p className="text-gray-600 text-sm mb-4 flex-grow">
+                  {framework.description}
+                </p>
+                <a
+                  href="/frameworks"
+                  className="text-black font-medium hover:underline transition-colors text-right"
+                >
+                  Learn More &gt;
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
         
         {/* View More Section */}

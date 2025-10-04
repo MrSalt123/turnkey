@@ -3,17 +3,36 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <div
-      className="py-32"
+      className="py-24 md:py-32"
       style={{ backgroundColor: 'var(--color-turnkey)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Content */}
           <div>
-            <h2 className="text-white text-left mb-6">
-              Make Compliance Your <span className="relative inline-block">
-                <span className="absolute bottom-1 left-0 w-full h-6 opacity-80 transform -skew-x-12 bg-blue-500"></span>
-                <span className="relative z-10">Competitive Advantage</span>
+          <h2 className="text-white text-left font-bold mb-6 text-4xl sm:text-5xl md:text-6xl" style={{ lineHeight: '1.1' }}>
+              Make Compliance Your{' '}
+
+              {/* --- The Responsive Highlight Solution --- */}
+
+              {/* 1. Mobile Version: Two separate spans for proper wrapping */}
+              {/* This is visible by default and becomes hidden on large screens (lg:hidden) */}
+              <span className="lg:hidden">
+                <span className="relative inline-block">
+                  <span className="absolute bottom-1 left-0 w-full h-3 sm:h-4 opacity-80 transform -skew-x-12 bg-blue-500"></span>
+                  <span className="relative z-10">Competitive</span>
+                </span>{' '}
+                <span className="relative inline-block">
+                  <span className="absolute bottom-1 left-0 w-full h-3 sm:h-4 opacity-80 transform -skew-x-12 bg-blue-500"></span>
+                  <span className="relative z-10">Advantage</span>
+                </span>
+              </span>
+
+              {/* 2. Desktop Version: One continuous span for a seamless highlight */}
+              {/* This is hidden by default and becomes visible on large screens (hidden lg:inline-block) */}
+              <span className="hidden lg:inline-block relative">
+                 <span className="absolute bottom-1 left-0 w-full h-4 opacity-80 transform -skew-x-12 bg-blue-500"></span>
+                 <span className="relative z-10">Competitive Advantage</span>
               </span>
             </h2>
             <p className="text-white/90 text-xl leading-relaxed mb-8">
