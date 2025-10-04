@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 // Framework icon component that renders different icons based on the framework
 const FrameworkIcon = ({ framework }: { framework: string }) => {
-  const iconProps = { size: 32, className: "text-blue-600" };
+  const iconProps = { size: 32, className: "text-black" };
   
   switch (framework) {
     case 'SOC 2':

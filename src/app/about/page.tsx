@@ -138,10 +138,10 @@ export default function About() {
                 TurnKey Compliance takes a collaborative, personalized approach to your security, partnering with you to create programs that meet industry standards. Our goal is to manage the complexities of the audit process on your behalf, allowing you to concentrate on your business.
               </p>
               <div className="flex flex-wrap gap-4">
-                 <button className="bg-accent text-white px-6 py-3 rounded-2xl font-medium hover:bg-blue-700 transition-colors">
+                 <button className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors">
                     Get Started
                 </button>
-                <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-2xl font-medium hover:bg-gray-100 transition-colors">
+                <button className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors">
                     Our Services
                 </button>
               </div>
@@ -253,10 +253,10 @@ export default function About() {
             Let&apos;s work together to make compliance your competitive advantage.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+            <button className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors">
               Get Started
             </button>
-            <button className="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
+            <button className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors">
               Learn More
             </button>
           </div>

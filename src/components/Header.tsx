@@ -67,7 +67,10 @@ export default function Header() {
                 onMouseLeave={() => setIsServicesHovered(false)}
               >
                 {/* The trigger now also needs to be relative for the arrow */}
-                <div className="relative text-white hover:text-accent py-2 transition-colors duration-200 cursor-pointer">
+                <Link 
+                  href="/services"
+                  className="relative text-white hover:text-accent py-2 transition-colors duration-200 cursor-pointer block"
+                >
                   <div className="label uppercase">Services</div>
                   
                   {/* The arrow is now absolutely positioned relative to its parent */}
@@ -79,7 +82,7 @@ export default function Header() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
-                </div>
+                </Link>
               {/* === MODIFIED SERVICES LINK END === */}
 
                 {/* Invisible bridge to prevent gap */}
@@ -242,7 +245,7 @@ export default function Header() {
                 <span className="text-lg font-medium uppercase">Services</span>
               </Link>
               <Link
-                href="/frameworks-standards"
+                href="/frameworks"
                 className="block py-3 text-gray-800 hover:text-blue-600 transition-colors border-b border-gray-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

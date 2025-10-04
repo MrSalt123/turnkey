@@ -3,17 +3,17 @@ import Image from 'next/image';
 
 const values = [
   {
-    icon: <Library size={32} className="text-blue-600" />,
+    icon: <Library size={32} className="text-black" />,
     title: "Transparency",
     description: "We believe in clear communication and honest guidance. Our partnership is built on an open book, ensuring you have a complete understanding of your compliance journey at every stage."
   },
   {
-    icon: <ShieldCheck size={32} className="text-blue-600" />,
+    icon: <ShieldCheck size={32} className="text-black" />,
     title: "Security",
     description: "Protecting your data and business operations is at the core of what we do. We implement and maintain industry-leading security practices to safeguard your most valuable assets."
   },
   {
-    icon: <Award size={32} className="text-blue-600" />,
+    icon: <Award size={32} className="text-black" />,
     title: "Excellence",
     description: "We don’t just aim to meet standards; we strive to exceed them. Our commitment to excellence means delivering results that provide lasting value and a true competitive advantage."
   }
@@ -42,6 +42,9 @@ export default function ValuesSection() {
             <h2 className="text-white text-3xl sm:text-4xl font-bold">
               Our Guiding Principles
             </h2>
+            <p className="text-white/90 text-lg mt-4 leading-relaxed w-3/4">
+              These core values drive everything we do and shape how we partner with our clients to achieve compliance success.
+            </p>
           </div>
           <div className="hidden lg:flex justify-center items-center">
             <Image
