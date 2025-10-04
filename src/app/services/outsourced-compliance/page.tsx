@@ -58,7 +58,7 @@ export default function OutsourcedCompliancePage() {
               <div className="space-y-4 text-gray-600">
                 <p className="text-lg leading-relaxed">
                   Outsourced compliance is a comprehensive service where we become your dedicated compliance 
-                  team, managing all aspects of your compliance program from strategy to execution. It's like 
+                  team, managing all aspects of your compliance program from strategy to execution. It&apos;s like 
                   having a full compliance department without the cost and complexity.
                 </p>
                 <p className="text-lg leading-relaxed">

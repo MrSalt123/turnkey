@@ -18,8 +18,8 @@ export default function ReadinessAssessmentsPage() {
                 Achieve Audit Success with Our Readiness Assessments
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
-                Don't wait for the auditors to find your weaknesses. We prepare you for success by simulating 
-                the audit process and providing a clear path to remediation, ensuring you're fully prepared 
+                Don&apos;t wait for the auditors to find your weaknesses. We prepare you for success by simulating 
+                the audit process and providing a clear path to remediation, ensuring you&apos;re fully prepared 
                 for any compliance review.
               </p>
               <div className="relative inline-block">
@@ -58,7 +58,7 @@ export default function ReadinessAssessmentsPage() {
               <div className="space-y-4 text-gray-600">
                 <p className="text-lg leading-relaxed">
                   A readiness assessment is a comprehensive evaluation that simulates the actual audit process 
-                  to identify potential issues before the real audit begins. It's your dress rehearsal for 
+                  to identify potential issues before the real audit begins. It&apos;s your dress rehearsal for 
                   compliance success.
                 </p>
                 <p className="text-lg leading-relaxed">
@@ -111,7 +111,7 @@ export default function ReadinessAssessmentsPage() {
               What You Get
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive deliverables that ensure you're fully prepared for audit success
+              Comprehensive deliverables that ensure you&apos;re fully prepared for audit success
             </p>
           </div>
           

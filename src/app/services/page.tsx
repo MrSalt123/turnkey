@@ -97,7 +97,7 @@ export default function ServicesPage() {
               </div>
               <p className="text-gray-600 text-base mb-6 flex-grow">
                 Uncover hidden risks and get a clear roadmap for your compliance journey. We identify gaps 
-                across your people, processes, and technology to ensure you're audit-ready.
+                across your people, processes, and technology to ensure you&apos;re audit-ready.
               </p>
               <Link
                 href="/services/gap-analysis"
@@ -126,7 +126,7 @@ export default function ServicesPage() {
               </div>
               <p className="text-gray-600 text-base mb-6 flex-grow">
                 Achieve audit success with our comprehensive readiness assessments. We simulate the audit 
-                process and provide a clear path to remediation, ensuring you're prepared for any compliance review.
+                process and provide a clear path to remediation, ensuring you&apos;re prepared for any compliance review.
               </p>
               <Link
                 href="/services/readiness-assessments"

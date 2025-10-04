@@ -18,7 +18,7 @@ export default function GapAnalysisPage() {
                 Uncover Hidden Risks with Our Gap Analysis
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
-                Don't let compliance gaps catch you off guard. Our comprehensive gap analysis identifies vulnerabilities 
+                Don&apos;t let compliance gaps catch you off guard. Our comprehensive gap analysis identifies vulnerabilities 
                 across your people, processes, and technology, giving you a clear roadmap to audit readiness and 
                 regulatory compliance.
               </p>
@@ -58,7 +58,7 @@ export default function GapAnalysisPage() {
               <div className="space-y-4 text-gray-600">
                 <p className="text-lg leading-relaxed">
                   A gap analysis is a comprehensive assessment that compares your current compliance posture 
-                  against specific regulatory requirements or industry standards. It's the foundation of any 
+                  against specific regulatory requirements or industry standards. It&apos;s the foundation of any 
                   successful compliance program.
                 </p>
                 <p className="text-lg leading-relaxed">

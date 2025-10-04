@@ -59,7 +59,7 @@ export default function AdvisoryServicesPage() {
                 <p className="text-lg leading-relaxed">
                   Advisory services provide strategic compliance guidance and expert consultation to help 
                   you navigate complex regulatory landscapes, make informed decisions, and build effective 
-                  compliance programs. It's like having a compliance expert on speed dial.
+                  compliance programs. It&apos;s like having a compliance expert on speed dial.
                 </p>
                 <p className="text-lg leading-relaxed">
                   <strong>Critical business problems it solves:</strong>

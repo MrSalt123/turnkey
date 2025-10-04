@@ -17,7 +17,7 @@ export default function ContactPage() {
                 Ready to Get Started?
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
-                Let's discuss how TurnKey Compliance can help you build a stronger, more effective compliance program. 
+                Let&apos;s discuss how TurnKey Compliance can help you build a stronger, more effective compliance program. 
                 Get in touch with our experts today.
               </p>
               <div className="relative inline-block">
@@ -225,7 +225,7 @@ export default function ContactPage() {
             Ready to Build a Stronger Compliance Program?
           </h2>
           <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-            Let's discuss how we can help you achieve compliance success.
+            Let&apos;s discuss how we can help you achieve compliance success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
