@@ -48,11 +48,11 @@ export default function GapAnalysisPage() {
       </div>
 
       {/* Problem/Solution Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-gray-900 mb-6">
                 What It Is & Why It Matters
               </h2>
               <div className="space-y-4 text-gray-600">
@@ -66,19 +66,19 @@ export default function GapAnalysisPage() {
                 </p>
                 <ul className="space-y-2 ml-4">
                   <li className="flex items-start">
-                    <span className="text-red-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     <span>Avoid costly audit failures and regulatory penalties</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-red-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     <span>Save time and money by focusing on the right priorities</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-red-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     <span>Build stakeholder trust with transparent compliance status</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-red-500 mr-2">•</span>
+                    <span className="text-accent mr-2">•</span>
                     <span>Identify security vulnerabilities before they become breaches</span>
                   </li>
                 </ul>
@@ -104,10 +104,10 @@ export default function GapAnalysisPage() {
       </section>
 
       {/* Key Deliverables Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-gray-900 mb-4">
               What You Get
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">

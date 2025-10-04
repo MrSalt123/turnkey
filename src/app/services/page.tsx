@@ -52,7 +52,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Service Grid */}
-      <div className="py-24 bg-white">
+      <div className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
@@ -198,7 +198,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Who We Help Section */}
-      <div className="py-12 md:py-24 bg-white">
+      <div className="py-12 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
