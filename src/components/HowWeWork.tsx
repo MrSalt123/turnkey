@@ -70,7 +70,7 @@ const HowWeWork = () => {
         {/* Four Step Cards */}
         <div className="mb-16">
           {/* Step Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6">
             {processSteps.map((step, index) => (
               <StepCard 
                 key={step.id} 

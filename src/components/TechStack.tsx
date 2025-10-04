@@ -44,7 +44,7 @@ export default function TechStack() {
           {/* Main Heading with the highlight effect */}
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Built for <span className="relative inline-block">
-              <span className="absolute bottom-1.5 left-0 w-full h-6 opacity-50 transform -skew-x-12 bg-blue-500"></span>
+              <span className="absolute bottom-1.5 left-0 w-full h-4 opacity-50 transform -skew-x-12 bg-blue-500"></span>
               <span className="relative z-10">Your Tech Stack</span>
             </span>
           </h2>

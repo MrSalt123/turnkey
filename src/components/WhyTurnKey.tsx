@@ -27,7 +27,7 @@ const benefits = [
 
 export default function WhyTurnKey() {
   return (
-    <div className="py-20 sm:py-24 bg-background">
+    <div className="py-12 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}

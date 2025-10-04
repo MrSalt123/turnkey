@@ -94,7 +94,7 @@ export default function AdvisoryServicesPage() {
                   className="relative z-10 w-full h-auto object-cover max-w-lg aspect-[4/3]"
                 />
                 <div
-                  className="absolute -left-4 -bottom-4 w-full h-full"
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
                   style={{ backgroundColor: 'var(--color-accent)' }}
                 />
               </div>

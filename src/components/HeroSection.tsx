@@ -35,7 +35,7 @@ export default function HeroSection() {
                  <span className="relative z-10">Competitive Advantage</span>
               </span>
             </h2>
-            <p className="text-white/90 text-xl leading-relaxed mb-8">
+            <p className="text-white/90 mb-8">
               Tailored to your business, not boxed into someone else&apos;s framework.<br /><br />
                We go beyond consulting to become a true extension of your team, delivering personalized compliance programs that align with your business goals and growth stage.
             </p>
