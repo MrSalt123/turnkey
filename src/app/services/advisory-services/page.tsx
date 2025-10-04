@@ -29,13 +29,19 @@ export default function AdvisoryServicesPage() {
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <Image
-                src="/cyberteam.jpg"
-                alt="Advisory Services"
-                width={512}
-                height={448}
-                className="w-2/3 max-w-lg object-cover h-112"
-              />
+              <div className="relative">
+                <Image
+                  src="/cyberteam.jpg"
+                  alt="Advisory Services"
+                  width={512}
+                  height={448}
+                  className="relative z-10 w-full max-w-lg object-cover h-112"
+                />
+                <div
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
+                  style={{ backgroundColor: 'var(--color-accent)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
