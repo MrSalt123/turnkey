@@ -5,11 +5,13 @@ import Image from 'next/image';
 
 export default function HowWeCanHelp() {
   const services = [
-    "Identify security, privacy and compliance gaps across people, processes, and technology",
-    "Conduct internal audits and readiness assessments",
-    "Define, coordinate and manage remediation efforts",
-    "Act as your co-sourced / outsourced Security, Privacy & Compliance Officer",
-    "Streamline auditor coordination and evidence prep"
+    { title: "Risk Management & Analysis", description: "Assess threats, document mitigation plans, and support ongoing risk reviews." },
+    { title: "Policies & Procedures", description: "Develop and map policies directly to frameworks for full audit traceability." },
+    { title: "Vendor & Contract Management", description: "Evaluate third-party compliance, review contracts, and manage vendor risk." },
+    { title: "Incident Response & Breach Readiness", description: "Define procedures for identifying, reporting, and documenting incidents." },
+    { title: "Internal Audit", description: "Conduct independent evaluations of internal controls and processes to verify compliance effectiveness and readiness for external audits." },
+    { title: "Audit Preparation & Coordination", description: "Streamline documentation, readiness testing, and external auditor engagement." },
+    { title: "Ongoing Support (vCISO / vCompliance / vPrivacy)", description: "Provide continuous program oversight, updates, and security and privacy training." }
   ];
 
   return (
@@ -24,6 +26,10 @@ export default function HowWeCanHelp() {
             <p className="text-lg text-gray-600 max-w-3xl">
               Comprehensive, audit-ready compliance solutions that strengthen security and privacy, drive efficiency, and build lasting business confidence.
             </p>
+            <br />
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              We help organizations identify risks, strengthen controls, and maintain continuous compliance through tailored, practical solutions across security, privacy, and governance
+            </p>
           </div>
           <div className="hidden lg:flex justify-center items-center">
             <Image 
@@ -37,23 +43,36 @@ export default function HowWeCanHelp() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left column - Paragraph text */}
-          <div>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              We help organizations identify risks, strengthen controls, and maintain continuous compliance through tailored, practical solutions across security, privacy, and governance
-            </p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          {/* Left column - Image (1/3) */}
+          <div className="flex justify-center">
+            <div className="relative">
+              <Image
+                src="/hike.jpeg"
+                alt="TurnKey Compliance Team Strategy"
+                width={512}
+                height={448}
+                className="hidden md:block relative z-10 w-full object-cover h-112 rounded-tl-4xl rounded-br-4xl"
+              />
+              <div
+                className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
+                style={{ backgroundColor: 'var(--color-accent)' }}
+              />
+            </div>
           </div>
 
-          {/* Right column - Services list */}
-          <div className="flex flex-col justify-center">
+          {/* Right column - Paragraph and Services list (2/3) */}
+          <div className="lg:col-span-2 flex flex-col justify-center">
             <ul className="space-y-6">
               {services.map((service, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <div className="flex-shrink-0">
-                    <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
+                <li key={index} className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    <CheckCircle className="w-6 h-6 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">{service}</span>
+                  <div>
+                    <h5 className="mb-1">{service.title}</h5>
+                    {/* <p className="text-base text-gray-600">{service.description}</p> */}
+                  </div>
                 </li>
               ))}
             </ul>

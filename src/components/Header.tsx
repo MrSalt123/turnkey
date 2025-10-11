@@ -75,7 +75,6 @@ export default function Header() {
                     <Link href="/services/gap-analysis" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">Gap Analysis</Link>
                     <Link href="/services/readiness-assessments" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">Readiness Assessments</Link>
                     <Link href="/services/outsourced-compliance" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">Outsourced Compliance</Link>
-                    <Link href="/services/advisory-services" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">Advisory Services</Link>
                   </div>
                 )}
               </div>

@@ -1,5 +1,4 @@
 import { ShieldCheck, Scale, GanttChartSquare, Users } from 'lucide-react'; // Added more icons
-import Image from 'next/image';
 
 // Updated benefits array with unique icons for each
 const benefits = [
@@ -51,44 +50,33 @@ export default function WhyTurnKey() {
         </div>
 
 
-        {/* Main layout with image on left and elegant list on right */}
+        {/* Four cards in a row */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            
-            {/* Left side: Team Strategy Image with decorative background */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="relative w-full max-w-lg">
-                {/* Main team strategy image - Replaced Next/Image with standard <img> */}
-                <Image
-                  src="/teamstrategy.jpg"
-                  alt="A team of professionals collaborating on a strategy at a whiteboard"
-                  width="500"
-                  height={400}                    
-                  className="relative z-10 w-full h-auto shadow-xl"
-                />
-                {/* Decorative background element */}
-                <div
-                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full z-0"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {benefits.map((benefit, index) => {
+              const useAccent = index === 0 || index === 2;
+              const borderColor = useAccent ? 'border-accent' : 'border-accent-light';
+              const shadowColor = useAccent ? 'var(--color-accent)' : 'var(--color-accent-light)';
+              const borderRadius = (index % 2 === 1) ? 'rounded-tr-4xl rounded-bl-4xl' : 'rounded-tl-4xl rounded-br-4xl';
+              
+              return (
+                <div 
+                  key={index} 
+                  className={`bg-white p-4 md:p-6 border-2 ${borderColor} ${borderRadius} transition-all duration-300 hover:shadow-lg`}
+                  style={{ boxShadow: `8px 8px 0px ${shadowColor}`, minHeight: '200px' }}
                 >
-                </div>
-              </div>
-            </div>
-
-            {/* Right side: Benefit List as 2x2 Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 mt-1">
-                    {benefit.icon}
-                  </div>
-                  <div>
-                    <h5 className="mb-1">{benefit.title}</h5>
-                    <p className="text-base text-gray-600">{benefit.description}</p>
+                  <div className="flex flex-col">
+                    <div className="mb-4">
+                      {benefit.icon}
+                    </div>
+                    <div>
+                      <h5 className="mb-2">{benefit.title}</h5>
+                      <p className="text-base text-gray-600">{benefit.description}</p>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>

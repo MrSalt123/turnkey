@@ -94,19 +94,19 @@ export default function About() {
 
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <div className="relative">
-                <Image
-                  src="/teamstrategy.jpg"
-                  alt="About TurnKey Compliance"
-                  width={512}
-                  height={448}
-                  className="relative z-10 w-full max-w-lg object-cover h-112"
-                />
-                <div
-                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+            <div className="relative">
+              <Image
+                src="/partner.jpg"
+                alt="TurnKey Compliance Team Strategy"
+                width={512}
+                height={448}
+                className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
+              />
+              <div
+                className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
+                style={{ backgroundColor: 'var(--color-accent)' }}
+              />
+            </div>
             </div>
           </div>
         </div>

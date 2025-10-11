@@ -50,6 +50,9 @@ export default function HeroSection() {
               <Link href="/contact" className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors rounded-2xl font-semibold">
                 Let&apos;s Talk
               </Link>
+              <Link href="/about" className="bg-turnkey text-white px-4 md:px-8 py-3 hover:bg-turnkey-light transition-colors rounded-2xl font-semibold">
+                About TurnKey
+              </Link>
             </div>
           </div>
           

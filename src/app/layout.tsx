@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased min-h-screen bg-cover bg-center bg-no-repeat bg-fixed`}
+        className={`${poppins.className} antialiased min-h-screen bg-cover bg-center bg-no-repeat bg-fixed `}
       >
         <Header />
         {children}

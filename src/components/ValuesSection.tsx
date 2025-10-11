@@ -59,25 +59,32 @@ export default function ValuesSection() {
 
         {/* Grid for the overlapping value cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
-          {values.map((value, index) => (
-            <div
-              key={index}
-              className="bg-white p-4 md:p-6 border-2 border-accent transition-all duration-300 hover:shadow-lg rounded-tl-4xl rounded-br-4xl"
-              style={{
-                boxShadow: '8px 8px 0px var(--color-accent)'
-              }}
-            >
-              <div className="flex items-center gap-4 mb-4">
-                {value.icon}
-                <h4 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
-                  {value.title}
-                </h4>
+          {values.map((value, index) => {
+            const isSecondCard = index === 1;
+            const borderColor = isSecondCard ? 'border-accent-light' : 'border-accent';
+            const shadowColor = isSecondCard ? 'var(--color-accent-light)' : 'var(--color-accent)';
+            const borderRadius = isSecondCard ? 'rounded-tr-4xl rounded-bl-4xl' : 'rounded-tl-4xl rounded-br-4xl';
+            
+            return (
+              <div
+                key={index}
+                className={`bg-white p-4 md:p-6 border-2 ${borderColor} transition-all duration-300 hover:shadow-lg ${borderRadius}`}
+                style={{
+                  boxShadow: `8px 8px 0px ${shadowColor}`
+                }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  {value.icon}
+                  <h4 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
+                    {value.title}
+                  </h4>
+                </div>
+                <p className="text-gray-600 text-base">
+                  {value.description}
+                </p>
               </div>
-              <p className="text-gray-600 text-base">
-                {value.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

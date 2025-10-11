@@ -55,7 +55,6 @@ export default function Footer() {
                   <Link href="/services/gap-analysis" className="text-xs text-gray-500 hover:text-gray-900 whitespace-nowrap">Gap Analysis</Link>
                   <Link href="/services/readiness-assessments" className="text-xs text-gray-500 hover:text-gray-900 whitespace-nowrap">Readiness Assessments</Link>
                   <Link href="/services/outsourced-compliance" className="text-xs text-gray-500 hover:text-gray-900 whitespace-nowrap">Outsourced Compliance</Link>
-                  <Link href="/services/advisory-services" className="text-xs text-gray-500 hover:text-gray-900 whitespace-nowrap">Advisory Services</Link>
                 </div>
               </div>
 
