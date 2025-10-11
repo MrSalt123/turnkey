@@ -14,77 +14,79 @@ export default function WhoWeAre() {
         {/* Introductory Paragraph */}
         <div className="max-w-4xl mx-auto mb-16">
           <p className="text-lg text-gray-600 leading-relaxed md:text-center">
-            We go beyond consulting to become a true extension of your team. Our guidance is delivered by seasoned professionals who translate complex compliance requirements into practical, business-aligned solutions.
+            We go beyond consulting to become a true extension of your team. Our guidance is grounded in Big Four discipline and delivered with the agility of a boutique firm—transforming complex compliance requirements into practical, business-aligned results.
           </p>
         </div>
 
         {/* Key Selling Points Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
-          {/* Card 1: Big Four Background */}
-          <div
-            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-            style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <Building2 size={40} strokeWidth={1.5} className="text-black" />
-              {/* Heading simplified */}
-              <h4 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
-                Big Four Background
-              </h4>
-            </div>
-            <p className="text-gray-600 text-base">
-              Our team is composed of professionals with experience from Big Four accounting and top-tier consulting firms.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          {/* Card 2: Certified Expertise */}
-          <div
-            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-            style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <ShieldCheck size={40} strokeWidth={1.5} className="text-black" />
-              <h4 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
-                Certified Expertise
-              </h4>
+          {/* Card 1: Big Four Rigor */}
+          <div className="flex flex-col gap-8">
+            <div
+              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <Building2 size={40} strokeWidth={1.5} className="text-black" />
+                <h3 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
+                  Big Four Rigor
+                </h3>
+              </div>
+              <p className="text-gray-600 text-base">
+                Founded by former Big Four professionals, TurnKey applies the same audit-grade standards and proven methodologies those firms use—delivered with the responsiveness of a boutique team.
+              </p>
             </div>
-            <p className="text-gray-600 text-base">
-              We hold leading industry certifications including CISA, CISM, CIPM, and ISO 27001/42001 Lead Auditor credentials.
-            </p>
+
+            {/* Card 2: Certified Expertise */}
+            <div
+              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent rounded-tr-4xl rounded-bl-4xl"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <ShieldCheck size={40} strokeWidth={1.5} className="text-black" />
+                <h3 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
+                  Certified Expertise
+                </h3>
+              </div>
+              <p className="text-gray-600 text-base">
+                Our consultants hold leading industry credentials, including CISA, CISM, CIPM, and ISO 27001 Lead Auditor certifications.
+              </p>
+            </div>
           </div>
 
           {/* Card 3: Industry Knowledge */}
-          <div
-            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-            style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <Factory size={40} strokeWidth={1.5} className="text-black" />
-              {/* Heading simplified */}
-              <h4 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
-                Industry Knowledge
-              </h4>
+          <div className="flex flex-col gap-8 md:mt-8">
+            <div
+              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent rounded-tr-4xl rounded-bl-4xl"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <Factory size={40} strokeWidth={1.5} className="text-black" />
+                <h3 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
+                  Industry Knowledge
+                </h3>
+              </div>
+              <p className="text-gray-600 text-base">
+                We&apos;ve guided clients across regulated sectors such as FinTech, SaaS, cybersecurity, healthcare, government, and manufacturing—helping each achieve audit-ready confidence.
+              </p>
             </div>
-            <p className="text-gray-600 text-base">
-              We have proven success across regulated industries including FinTech, healthcare, SaaS, government, and manufacturing.
-            </p>
-          </div>
 
-          {/* Card 4: Scalable Success */}
-          <div
-            className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-            style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <TrendingUp size={40} strokeWidth={1.5} className="text-black" />
-              <h4 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
-                Scalable Success
-              </h4>
+            {/* Card 4: Scalable Success */}
+            <div
+              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <TrendingUp size={40} strokeWidth={1.5} className="text-black" />
+                <h3 className="text-xl font-semibold text-gray-800 flex items-center" style={{ color: 'var(--color-accent)' }}>
+                  Scalable Success
+                </h3>
+              </div>
+              <p className="text-gray-600 text-base">
+                Our experience spans organizations of all sizes, from high-growth startups to Fortune 500 enterprises, ensuring our solutions scale as your business evolves.
+              </p>
             </div>
-            <p className="text-gray-600 text-base">
-              Our experience spans organizations of all sizes, from innovative startups to Fortune 500 companies.
-            </p>
           </div>
         </div>
       </div>

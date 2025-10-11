@@ -91,7 +91,7 @@ export default function About() {
                 Connect with Us
               </Link>
             </div>
-            
+
             {/* Right column - Image */}
             <div className="flex justify-center">
               <div className="relative">
@@ -139,11 +139,11 @@ export default function About() {
                 TurnKey Compliance takes a collaborative, personalized approach to your security, partnering with you to create programs that meet industry standards. Our goal is to manage the complexities of the audit process on your behalf, allowing you to concentrate on your business.
               </p>
               <div className="flex flex-wrap gap-4">
-                 <Link href="/contact" className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors rounded-md">
-                    Get Started
+                <Link href="/contact" className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors rounded-md">
+                  Get Started
                 </Link>
                 <Link href="/services" className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
-                    Our Services
+                  Our Services
                 </Link>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function About() {
       </div>
 
       {/* By The Numbers section */}
-      <div className="py-16 bg-background">
+      {/* <div className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
@@ -190,7 +190,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <ValuesSection />
 
@@ -200,45 +200,49 @@ export default function About() {
       <div className="py-16 sm:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-             <h2 className="text-3xl font-bold">
-                Meet Our Founder
+            <h2 className="text-3xl font-bold">
+              Meet Our Founder
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex justify-center">
               <div className="relative">
-                <div className="absolute -left-2 -top-2 md:-left-4 md:-top-4 w-full h-full bg-accent z-0"></div>
+                <div className="absolute -right-2 -bottom-2 md:-right-4 md:-bottom-4 w-full h-full bg-accent z-0 rounded-bl-4xl rounded-tr-4xl"></div>
                 <Image
-                    src="/jason.avif"
-                    alt="Jason - Founder of TurnKey Compliance"
-                    width={384}
-                    height={384}
-                    className="relative z-10 w-96 h-96 object-cover shadow-lg"
-                  />
+                  src="/jason.avif"
+                  alt="Jason - Founder of TurnKey Compliance"
+                  width={384}
+                  height={384}
+                  className="relative z-10 w-96 h-96 object-cover shadow-lg rounded-bl-4xl rounded-tr-4xl"
+                />
               </div>
             </div>
             <div className="space-y-6">
               <div>
                 <div className="flex items-center gap-4">
-                    <h3 className="text-3xl font-bold text-gray-900">
-                        Jason Lannen
-                    </h3>
-                    <a href="https://www.linkedin.com/in/jasonlannen" target="_blank" aria-label="Jason's LinkedIn Profile" className="text-gray-400 hover:text-blue-600 transition-colors ">
-                        <Linkedin size={24} />
-                    </a>
+                  <h3 className="text-3xl font-bold text-gray-900">
+                    Jason Lannen
+                  </h3>
+                  <a href="https://www.linkedin.com/in/jasonlannen" target="_blank" aria-label="Jason's LinkedIn Profile" className="text-gray-400 hover:text-blue-600 transition-colors ">
+                    <Linkedin size={24} />
+                  </a>
                 </div>
                 <p className="text-lg font-medium">
-                    Founder & Principal Consultant
+                  Founder & Managing Director
                 </p>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                A seasoned compliance professional with over 20 years of experience, Jason has a passion for helping organizations achieve and maintain compliance. Having served as an external auditor in KPMG&apos;s IT Advisory Practice, he possesses unique insight into the complexities of audits.
+                With over 20 years of experience in IT audit and compliance, Jason founded TurnKey Compliance in 2009 to help organizations transform compliance from a regulatory obligation into a true business advantage.
               </p>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                A former external auditor in KPMG’s IT Advisory Practice, he leverages deep industry expertise and Big Four methodology to help clients improve operational efficiency, drive revenue, and strengthen their security posture.
+              </p>
+
               <blockquote className="border-l-4 pl-4 italic text-gray-700" style={{ borderColor: 'var(--color-turnkey)' }}>
-                &ldquo;This experience inspired me to establish TurnKey, with the goal of simplifying the audit process for clients.&rdquo;
+                &ldquo;My goal has always been to make compliance a driver of business performance—helping companies operate more efficiently, securely, and confidently.&rdquo;
               </blockquote>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Jason frequently speaks at his alma mater, University of Georgia, on compliance-related topics.
+                Jason is also a frequent speaker at the University of Georgia, where he shares insights on building compliance programs, IT strategy, risk management, and entrepreneurship.
               </p>
             </div>
           </div>

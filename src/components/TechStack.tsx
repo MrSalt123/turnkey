@@ -37,7 +37,13 @@ export default function TechStack() {
   return (
     // Section container with a dark background to match your theme
     <div className="bg-turnkey py-20 sm:py-24 relative">
-      {/* Background image across the whole screen */}
+      {/* Light from top gradient overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, transparent 25%, transparent 80%, rgba(0, 0, 0, 0.1) 100%)'
+        }}
+      />
   
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -73,7 +79,7 @@ export default function TechStack() {
          <div className="mt-16 text-center">
            <a
              href="/contact"
-             className="inline-block px-8 py-3 border border-white rounded-md text-base font-medium text-white hover:bg-white hover:text-gray-900 transition-colors"
+             className="inline-block px-8 py-3 border border-white rounded-4xl text-base font-medium text-black bg-background hover:bg-white/85 hover:border-white/85 transition-colors"
            >
              Discuss Your Environment
            </a>

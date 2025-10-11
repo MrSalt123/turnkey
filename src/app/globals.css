@@ -10,6 +10,8 @@
   --foreground: hsl(0, 0%, 0%);
   --color-accent: #0099d9;
   --color-turnkey: #003366;
+  --color-turnkey-light: hsl(210,100%,24%);
+  --color-accent-light: hsl(198, 100%, 85%);
 
   /* Card Colors */
   --card-bg: hsl(0, 0%, 100%);
@@ -32,6 +34,8 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--color-accent);
   --color-turnkey: var(--color-turnkey);
+  --color-turnkey-light: var(--color-turnkey-light);
+  --color-accent-light: var(--color-accent-light);
   --color-bg: var(--bg);
   --color-bg-light: var(--bg-light);
 
@@ -114,7 +118,7 @@ h2 {
 
 h3 {
   /*  font-family: var(--font-primary);*/
-  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-size: clamp(2rem, 3vw, 2.4rem);
   line-height: 1.3;
   letter-spacing: -0.005em;
   font-weight: 500;
@@ -139,7 +143,7 @@ h6 {
 }
 
 p {
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.5;
   font-weight: 400;
 }

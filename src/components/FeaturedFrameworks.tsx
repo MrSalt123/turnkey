@@ -60,25 +60,33 @@ const FrameworkIcon = ({ framework }: { framework: string }) => {
 const frameworks = [
   {
     title: 'SOC 2',
-    description: 'Assessments that examine internal controls relevant to security, availability, processing integrity, confidentiality, and privacy.',
+    description: 'Assessments that examine internal controls relevant to security, availability, processing integrity, confidentiality, and/or privacy.',
     path: '/frameworks/soc2',
   },
   {
     title: 'ISO 27001',
-    description: 'International standards focusing on information security, quality management, and AI and Machine Learning (ML).',
+    description: 'An international standard that establishes an ISMS framework and implements robust security controls to protect data and reduce risk.',
     path: '/frameworks/iso27001',
   },
   {
     title: 'ISO 27701',
-    description: 'A privacy extension to ISO 27001, providing guidance on protecting personal data and ensuring privacy compliance.',
+    description: 'An international standard extending ISO 27001 to establish a privacy information management system (PIMS) that protects personal data and ensures compliance.',
     path: '/frameworks/iso27701',
   },
 ];
 
 const FeaturedFrameworks = () => {
   return (
-    <div className="py-24" style={{ backgroundColor: 'var(--color-turnkey)' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-24 relative" style={{ backgroundColor: 'var(--color-turnkey)' }}>
+      {/* Light from top gradient overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, transparent 30%, transparent 70%, rgba(0, 0, 0, 0.1) 100%)'
+        }}
+      />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header with 2/3 Text and 1/3 Image Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-16">
@@ -108,30 +116,28 @@ const FeaturedFrameworks = () => {
             <div
               key={framework.title}
               className="
-                bg-white p-4 md:p-8 
-                border-2 border-black
-                transition-all duration-300 hover:shadow-lg hover:border-gray-300
-                flex flex-col h-full
+                bg-background p-4 md:p-6 
+                transition-all duration-300 
+                flex flex-col h-full rounded-tl-4xl rounded-br-4xl relative overflow-hidden
               "
-              style={{
-                boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000'
-              }}
             >
-              <div className="flex items-center gap-4 mb-4">
-                <FrameworkIcon framework={framework.title} />
-                <h4 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
-                  {framework.title}
-                </h4>
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="flex items-center gap-4 mb-4">
+                  <FrameworkIcon framework={framework.title} />
+                  <h4 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
+                    {framework.title}
+                  </h4>
+                </div>
+                <p className="text-gray-600 text-base mb-6 flex-grow">
+                  {framework.description}
+                </p>
+                <Link
+                  href={framework.path}
+                  className="text-black font-medium hover:underline transition-colors text-right mt-auto"
+                >
+                  Learn More &gt;
+                </Link>
               </div>
-              <p className="text-gray-600 text-base mb-6 flex-grow">
-                {framework.description}
-              </p>
-              <Link
-                href={framework.path}
-                className="text-black font-medium hover:underline transition-colors text-right"
-              >
-                Learn More &gt;
-              </Link>
             </div>
           ))}
         </div>
@@ -143,31 +149,36 @@ const FeaturedFrameworks = () => {
               <div
                 key={framework.title}
                 className="
-                  bg-white p-4 md:p-6 
-                  border-2 border-black
+                  bg-white p-4 md:p-6 rounded-2xl
                   transition-all duration-300 hover:shadow-lg hover:border-gray-300
                   flex flex-col
-                  w-80 flex-shrink-0
+                  w-80 flex-shrink-0 relative overflow-hidden
                 "
-                style={{
-                  boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000'
-                }}
               >
-                <div className="flex items-center gap-4 mb-4">
-                  <FrameworkIcon framework={framework.title} />
-                  <h4 className="text-lg font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
-                    {framework.title}
-                  </h4>
+                {/* Light gradient overlay for each card */}
+                <div 
+                  className="absolute inset-0 pointer-events-none rounded-2xl"
+                  style={{
+                    background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, transparent 40%)'
+                  }}
+                />
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="flex items-center gap-4 mb-4">
+                    <FrameworkIcon framework={framework.title} />
+                    <h4 className="text-lg font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
+                      {framework.title}
+                    </h4>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-4 flex-grow">
+                    {framework.description}
+                  </p>
+                  <Link
+                    href={framework.path}
+                    className="text-black font-medium hover:underline transition-colors text-right mt-auto"
+                  >
+                    Learn More &gt;
+                  </Link>
                 </div>
-                <p className="text-gray-600 text-sm mb-4 flex-grow">
-                  {framework.description}
-                </p>
-                <Link
-                  href={framework.path}
-                  className="text-black font-medium hover:underline transition-colors text-right"
-                >
-                  Learn More &gt;
-                </Link>
               </div>
             ))}
           </div>

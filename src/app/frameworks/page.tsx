@@ -154,14 +154,20 @@ export default function Frameworks() {
 
           {/* Frameworks Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {frameworks.map((framework) => (
+            {frameworks.map((framework, index) => {
+              const isEven = index % 2 === 1; // index 1, 3, 5, 7 are "even-numbered" cards (2nd, 4th, 6th, 8th)
+              const borderColor = isEven ? 'border-accent-light' : 'border-accent';
+              const shadowColor = isEven ? 'var(--color-accent-light)' : 'var(--color-accent)';
+              const borderRadius = isEven ? 'rounded-tr-4xl rounded-bl-4xl' : 'rounded-tl-4xl rounded-br-4xl';
+              
+              return (
               <div
                 key={framework.title}
-                className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300 flex flex-col h-full"
+                className={`bg-white p-4 md:p-6 border-2 ${borderColor} transition-all duration-300 ${borderRadius} flex flex-col h-full`}
                 style={{
                   boxShadow: hoveredCard === framework.title 
-                    ? '8px 8px 0px var(--color-accent), 8px 8px 0px 2px #000000'
-                    : '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000'
+                    ? `10px 10px 0px ${shadowColor}`
+                    : `8px 8px 0px ${shadowColor}`
                 }}
                 onMouseEnter={() => setHoveredCard(framework.title)}
                 onMouseLeave={() => setHoveredCard(null)}
@@ -182,7 +188,8 @@ export default function Frameworks() {
                   Learn More &gt;
                 </a>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

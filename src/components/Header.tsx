@@ -82,7 +82,7 @@ export default function Header() {
               <Link href="/frameworks" className={`${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200`}>
                 <span className="label uppercase">Frameworks</span>
               </Link>
-              <Link href="/contact" className="px-4 py-2 rounded-md text-white font-medium transition-colors duration-200 uppercase" style={{ backgroundColor: 'var(--color-accent)' }}>
+              <Link href="/contact" className="px-6 py-2 rounded-2xl text-white text-lg font-semibold transition-colors duration-200 uppercase" style={{ backgroundColor: 'var(--color-accent)' }}>
                 Contact Us
               </Link>
             </div>
@@ -134,7 +134,7 @@ export default function Header() {
             <Link href="/frameworks" className="block py-3 text-white hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
               <span className="text-lg font-medium uppercase">Frameworks</span>
             </Link>
-            <Link href="/contact" className="block py-2 px-4 rounded-md text-white font-medium uppercase mt-4 w-fit mb-2" style={{ backgroundColor: 'var(--color-accent)' }} onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="/contact" className="block py-2 px-4 rounded-2xl text-white font-medium uppercase mt-4 w-fit mb-2" style={{ backgroundColor: 'var(--color-accent)' }} onClick={() => setIsMobileMenuOpen(false)}>
               Contact Us
             </Link>
           </div>

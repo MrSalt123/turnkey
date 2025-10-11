@@ -76,7 +76,7 @@ export default function Footer() {
         {/* Bottom Bar: Copyright and Credit - This part was already responsive */}
         <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-[10px] text-gray-500 text-center sm:text-left">
-            &copy; {new Date().getFullYear()} TurnKey Compliance. All Rights Reserved. Located in Athens, GA. 
+            &copy; {new Date().getFullYear()} TurnKey Compliance. All Rights Reserved. 
           </p>
           <p className="text-[10px] text-gray-500 mt-2 sm:mt-0">
             Made by <a href="https://www.btwn.digital" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 font-medium">BTWN Digital</a>
