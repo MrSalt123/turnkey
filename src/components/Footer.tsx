@@ -65,7 +65,7 @@ export default function Footer() {
             
             <Link
               href="/contact"
-              className="px-5 py-2.5 rounded-md text-white text-md uppercase transition-colors duration-200 bg-accent"
+              className="px-5 py-2.5 rounded-2xl text-white text-md uppercase transition-colors duration-200 bg-accent"
             >
               Contact Us
             </Link>

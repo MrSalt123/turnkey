@@ -24,7 +24,7 @@ export default function ServicesPage() {
                 From gap analysis to ongoing advisory support, we help you build a robust compliance program
                 that protects your business and accelerates growth.
               </p>
-              <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-2xl ">
+              <Link href="/contact" className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors rounded-2xl font-semibold">
                 Get Started Today
               </Link>
             </div>
@@ -256,13 +256,13 @@ export default function ServicesPage() {
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
               href="/contact"
-              className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+              className="bg-white text-gray-900 px-8 py-3 rounded-2xl font-medium hover:bg-gray-100 transition-colors"
             >
               Get Started Today
             </Link>
             <Link
               href="/about"
-              className="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
+              className="border border-white text-white px-8 py-3 rounded-2xl font-medium hover:bg-white/10 transition-colors"
             >
               Learn About Us
             </Link>

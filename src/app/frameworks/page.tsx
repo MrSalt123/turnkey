@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { ShieldCheck, Cpu, ClipboardCheck, Database, FileText, Heart, Lock, CreditCard, Brain } from 'lucide-react';
+import { ShieldCheck, Cpu, ClipboardCheck, Database, FileText, Lock, CreditCard, Brain, Globe, Bot, Building2, Cloud } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -15,25 +15,32 @@ const FrameworkIcon = ({ framework }: { framework: string }) => {
       return <Cpu {...iconProps} />;
     case 'ISO 27701':
       return <ClipboardCheck {...iconProps} />;
-    case 'GDPR':
-      return <Database {...iconProps} />;
     case 'SOX 404':
       return <FileText {...iconProps} />;
-    case 'HIPAA':
-      return <Heart {...iconProps} />;
-    case 'NIST 800-171':
-      return <Lock {...iconProps} />;
-    case 'PCI':
+    case 'PCI DSS':
       return <CreditCard {...iconProps} />;
     case 'ISO 42001':
       return <Brain {...iconProps} />;
+    case 'GDPR':
+      return <Database {...iconProps} />;
+    case 'NIS2':
+      return <Globe {...iconProps} />;
+    case 'EU AI Act':
+      return <Bot {...iconProps} />;
+    case 'CMMC':
+      return <Lock {...iconProps} />;
+    case 'SOC 1':
+      return <Building2 {...iconProps} />;
+    case 'FedRAMP':
+      return <Cloud {...iconProps} />;
     default:
       return <ShieldCheck {...iconProps} />;
   }
 };
 
-// Framework data
+// Framework data - Updated order based on image provided
 const frameworks = [
+  // Row 1
   {
     title: 'SOC 2',
     description: 'Service Organization Control 2 assessments examine internal controls relevant to security, availability, processing integrity, confidentiality, and privacy.',
@@ -49,25 +56,11 @@ const frameworks = [
     description: 'Privacy extension to ISO 27001, providing guidance on protecting personal data and ensuring privacy compliance.',
     link: '/frameworks/iso27701'
   },
-  {
-    title: 'GDPR',
-    description: 'General Data Protection Regulation governing data protection and privacy in the European Union and European Economic Area.',
-    link: '/frameworks/gdpr'
-  },
+  // Row 2
   {
     title: 'SOX 404',
     description: 'Section 404 of SOX requires management and auditors to establish internal controls and procedures for financial reporting.',
     link: '/frameworks/sox404'
-  },
-  {
-    title: 'HIPAA',
-    description: 'Health Insurance Portability and Accountability Act protecting sensitive patient health information and ensuring its privacy and security.',
-    link: '/frameworks/hipaa'
-  },
-  {
-    title: 'NIST 800-171',
-    description: 'National Institute of Standards and Technology guidelines for protecting Controlled Unclassified Information in non-federal systems.',
-    link: '/frameworks/nist800-171'
   },
   {
     title: 'PCI DSS',
@@ -78,6 +71,38 @@ const frameworks = [
     title: 'ISO 42001',
     description: 'International standard for AI management systems, providing guidance on responsible AI development and deployment.',
     link: '/frameworks/iso42001'
+  },
+  // Row 3
+  {
+    title: 'GDPR',
+    description: 'General Data Protection Regulation governing data protection and privacy in the European Union and European Economic Area.',
+    link: '/frameworks/gdpr'
+  },
+  {
+    title: 'NIS2',
+    description: 'Network and Information Systems Directive 2 (NIS2) is the EU directive on measures for a high common level of cybersecurity across the Union.',
+    link: '/frameworks/nis2'
+  },
+  {
+    title: 'EU AI Act',
+    description: 'The EU Artificial Intelligence Act regulates AI systems to ensure they are safe, transparent, and respect fundamental rights.',
+    link: '/frameworks/eu-ai-act'
+  },
+  // Row 4
+  {
+    title: 'CMMC',
+    description: 'Cybersecurity Maturity Model Certification (CMMC) framework designed to protect Controlled Unclassified Information in the Defense Industrial Base.',
+    link: '/frameworks/cmmc'
+  },
+  {
+    title: 'SOC 1',
+    description: 'Service Organization Control 1 reports on internal controls over financial reporting for service organizations.',
+    link: '/frameworks/soc1'
+  },
+  {
+    title: 'FedRAMP',
+    description: 'Federal Risk and Authorization Management Program provides a standardized approach to security assessment and authorization for cloud products and services.',
+    link: '/frameworks/fedramp'
   }
 ];
 
@@ -102,26 +127,26 @@ export default function Frameworks() {
                 Navigate the complex world of compliance with confidence. Our expertise spans the most critical frameworks that protect your business and build trust with your stakeholders.<br /><br />
                 From cybersecurity to data privacy, financial controls to healthcare compliance, we help you implement the right frameworks for your industry and growth stage.
               </p>
-              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md">
+              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-2xl font-semibold">
                 Get Framework Assessment
               </button>
             </div>
             
             {/* Right column - Image */}
             <div className="flex justify-center">
-              <div className="relative">
-                <Image
-                  src="/teamstrategy.jpg"
-                  alt="Compliance Frameworks"
-                  width={512}
-                  height={448}
-                  className="relative z-10 w-full max-w-lg object-cover h-112"
-                />
-                <div
-                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+            <div className="relative">
+              <Image
+                src="/adventure.jpg"
+                alt="TurnKey Compliance Team Strategy"
+                width={512}
+                height={448}
+                className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
+              />
+              <div
+                className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
+                style={{ backgroundColor: 'var(--color-accent)' }}
+              />
+            </div>
             </div>
           </div>
         </div>
@@ -204,7 +229,7 @@ export default function Frameworks() {
             Let our experts guide you through the compliance journey that&apos;s right for your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/contact" className="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
+            <Link href="/contact" className="bg-white text-black px-8 py-3 rounded-2xl font-medium hover:bg-white/10 transition-colors">
               Schedule Consultation
             </Link>
           </div>

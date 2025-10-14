@@ -58,11 +58,12 @@ export default function WhyTurnKey() {
               const borderColor = useAccent ? 'border-accent' : 'border-accent-light';
               const shadowColor = useAccent ? 'var(--color-accent)' : 'var(--color-accent-light)';
               const borderRadius = (index % 2 === 1) ? 'rounded-tr-4xl rounded-bl-4xl' : 'rounded-tl-4xl rounded-br-4xl';
+              const marginTop = (index === 1 || index === 3) ? 'md:mt-8' : 'md:mb-8';
               
               return (
                 <div 
                   key={index} 
-                  className={`bg-white p-4 md:p-6 border-2 ${borderColor} ${borderRadius} transition-all duration-300 hover:shadow-lg`}
+                  className={`bg-white p-4 md:p-6 border-2 ${borderColor} ${borderRadius} ${marginTop} transition-all duration-300 hover:shadow-lg`}
                   style={{ boxShadow: `8px 8px 0px ${shadowColor}`, minHeight: '200px' }}
                 >
                   <div className="flex flex-col">

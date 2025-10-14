@@ -1,7 +1,7 @@
 'use client';
-import { Lock, ArrowLeft, CheckCircle, Shield, Users, Settings, Database } from 'lucide-react';
+import { Bot, ArrowLeft, CheckCircle, Shield, Users, Settings, Database } from 'lucide-react';
 
-export default function NIST800171Page() {
+export default function EUAIActPage() {
   return (
     <div className="min-h-screen relative">
       {/* Hero section */}
@@ -24,14 +24,14 @@ export default function NIST800171Page() {
             {/* Left column - Icon, Title, Button */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <Lock size={48} className="text-white" />
+                <Bot size={48} className="text-white" />
                 <h1 className="text-white text-4xl font-bold">
-                  NIST 800-171
+                  EU AI Act
                 </h1>
               </div>
               <div className="relative inline-block">
                 <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Get NIST 800-171 Assessment
+                  Get EU AI Act Assessment
                 </button>
                 <div
                   className="absolute -right-1 -bottom-1 w-full h-full"
@@ -43,7 +43,7 @@ export default function NIST800171Page() {
             {/* Right column - Content */}
             <div>
               <p className="text-white/90 text-xl leading-relaxed">
-                NIST Special Publication 800-171 provides guidelines for protecting Controlled Unclassified Information (CUI) in non-federal systems and organizations. It&apos;s essential for defense contractors and organizations working with federal agencies.
+                The EU Artificial Intelligence Act is the first comprehensive AI law globally, regulating AI systems to ensure they are safe, transparent, and respect fundamental rights. It establishes a risk-based approach to AI governance.
               </p>
             </div>
           </div>
@@ -56,13 +56,13 @@ export default function NIST800171Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-gray-900 mb-6">
-                What is NIST 800-171?
+                What is the EU AI Act?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                NIST 800-171 establishes security requirements for protecting CUI in non-federal systems and organizations. It&apos;s particularly important for defense contractors, research institutions, and organizations that handle federal contract information.
+                The EU AI Act establishes the first comprehensive legal framework for artificial intelligence systems. It categorizes AI systems based on risk levels and imposes different requirements accordingly, from minimal obligations to strict compliance requirements.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                The framework provides 110 security controls across 14 families, covering access control, awareness training, audit and accountability, and other critical security areas.
+                The regulation aims to ensure AI systems are trustworthy, respect fundamental rights, and contribute to innovation while maintaining the EU's competitive advantage in AI development.
               </p>
             </div>
             <div className="h-full">
@@ -70,19 +70,19 @@ export default function NIST800171Page() {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Federal contract eligibility</p>
+                  <p className="text-gray-700">EU market access for AI products</p>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Enhanced security posture</p>
+                  <p className="text-gray-700">Enhanced AI system trustworthiness</p>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Competitive advantage in government contracts</p>
+                  <p className="text-gray-700">Reduced legal and reputational risks</p>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Protection of sensitive information</p>
+                  <p className="text-gray-700">Competitive advantage in responsible AI</p>
                 </li>
               </ul>
             </div>
@@ -90,94 +90,162 @@ export default function NIST800171Page() {
         </div>
       </div>
 
-      {/* Control Families */}
+      {/* Risk Categories */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-gray-900 mb-4">
-              Key Control Families
+              AI Risk Categories
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              NIST 800-171 organizes 110 security controls into 14 families, each addressing specific aspects of information security.
+              The EU AI Act categorizes AI systems into four risk levels, each with specific compliance requirements and obligations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Access Control */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Minimal Risk */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Lock size={32} className="text-black" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Access Control
+                  Minimal Risk
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Controls to limit access to information systems and CUI to authorized users, processes, and devices.
+                AI systems with minimal risk, such as spam filters or video games, require no specific compliance measures.
               </p>
             </div>
 
-            {/* Awareness Training */}
+            {/* Limited Risk */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Users size={32} className="text-black" />
+                <Bot size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Awareness Training
+                  Limited Risk
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Training programs to ensure personnel are aware of security risks and their responsibilities in protecting CUI.
+                AI systems with limited risk, like chatbots, must comply with transparency obligations to inform users they are interacting with AI.
               </p>
             </div>
 
-            {/* Audit & Accountability */}
+            {/* High Risk */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Audit & Accountability
+                  High Risk
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Controls for creating, protecting, and retaining audit records and ensuring individual accountability.
+                High-risk AI systems, such as those used in critical infrastructure or employment decisions, require comprehensive compliance measures.
               </p>
             </div>
 
-            {/* Configuration Management */}
+            {/* Prohibited */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Configuration Management
+                  Prohibited
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Processes for establishing and maintaining secure configurations for information systems and components.
+                AI systems that pose unacceptable risks, such as social scoring or manipulative AI, are prohibited from use in the EU.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
 
-            {/* Incident Response */}
+      {/* Compliance Requirements */}
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-gray-900 mb-4">
+              Key Compliance Requirements
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              High-risk AI systems must meet comprehensive compliance requirements to ensure safety, transparency, and accountability.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Risk Management */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Incident Response
+                  Risk Management
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Procedures for detecting, analyzing, and responding to information security incidents involving CUI.
+                Comprehensive risk management systems to identify, assess, and mitigate risks throughout the AI system lifecycle.
               </p>
             </div>
 
-            {/* System & Communications Protection */}
+            {/* Data Governance */}
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+              <div className="flex items-center gap-4 mb-4">
+                <Database size={32} className="text-black" />
+                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
+                  Data Governance
+                </h4>
+              </div>
+              <p className="text-gray-600 text-base">
+                Robust data governance practices ensuring training, validation, and testing data is relevant, representative, and free from bias.
+              </p>
+            </div>
+
+            {/* Transparency */}
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+              <div className="flex items-center gap-4 mb-4">
+                <Users size={32} className="text-black" />
+                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
+                  Transparency
+                </h4>
+              </div>
+              <p className="text-gray-600 text-base">
+                Clear documentation and transparency requirements to ensure AI systems are understandable and accountable.
+              </p>
+            </div>
+
+            {/* Human Oversight */}
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+              <div className="flex items-center gap-4 mb-4">
+                <Users size={32} className="text-black" />
+                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
+                  Human Oversight
+                </h4>
+              </div>
+              <p className="text-gray-600 text-base">
+                Effective human oversight mechanisms to monitor AI system operation and intervene when necessary.
+              </p>
+            </div>
+
+            {/* Accuracy & Robustness */}
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+              <div className="flex items-center gap-4 mb-4">
+                <Settings size={32} className="text-black" />
+                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
+                  Accuracy & Robustness
+                </h4>
+              </div>
+              <p className="text-gray-600 text-base">
+                High levels of accuracy, robustness, and cybersecurity to ensure reliable and secure AI system performance.
+              </p>
+            </div>
+
+            {/* Conformity Assessment */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  System Protection
+                  Conformity Assessment
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Controls for monitoring and protecting organizational communications and information systems.
+                Third-party conformity assessment and CE marking for high-risk AI systems before market placement.
               </p>
             </div>
           </div>
@@ -188,10 +256,10 @@ export default function NIST800171Page() {
       <div className="py-16" style={{ backgroundColor: 'var(--color-turnkey)' }}>
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-white text-3xl font-bold mb-6">
-            Ready to Implement NIST 800-171?
+            Ready to Implement EU AI Act Compliance?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Let our experts guide you through NIST 800-171 compliance and help you secure federal contracts while protecting sensitive information.
+            Let our experts guide you through EU AI Act compliance and help you develop trustworthy AI systems that meet European regulatory requirements.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">

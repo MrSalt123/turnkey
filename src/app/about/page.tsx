@@ -87,7 +87,7 @@ export default function About() {
                 Our deep industry knowledge, rooted in Big Four philosophies, becomes your strategic advantage.<br /><br />
                 Founded on the principle of simplifying the audit process, our mission is to empower your business.
               </p>
-              <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-md" >
+              <Link href="/contact" className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors rounded-2xl font-semibold">
                 Connect with Us
               </Link>
             </div>
@@ -115,34 +115,54 @@ export default function About() {
       {/* Mission section */}
       <div className="py-16 sm:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Section Header */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-16">
+            <div className="lg:col-span-2">
+              <h2 className="text-4xl font-bold mb-4 text-gray-900">
+                A TurnKey Approach to Compliance
+              </h2>
+            </div>
+            <div className="hidden lg:flex justify-center items-center">
+              <Image
+                src="/mountains/mountainn.svg"
+                alt="Landscape Illustration"
+                width={192}
+                height={192}
+                className="w-48 h-48 object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Content Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="flex justify-center">
-              <div className="relative">
+            {/* THIS IS THE MODIFIED SECTION */}
+            <div className="flex justify-center w-full"> 
+              <div className="relative w-full max-w-lg ">
                 <Image
-                  src="/approach.jpg"
+                  src="/adventure.jpg"
                   alt="A professional team collaborating in a modern office"
                   width={512}
                   height={384}
-                  className="relative z-10 w-full h-auto object-cover max-w-lg aspect-[4/3]"
+                  className="relative z-10 w-full h-auto object-cover aspect-[4/3] rounded-tl-4xl rounded-br-4xl"
+                  // REMOVED: max-w-lg
                 />
                 <div
-                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
                   style={{ backgroundColor: 'var(--color-accent)' }}
                 />
               </div>
             </div>
+            {/* END OF MODIFIED SECTION */}
             <div>
-              <h2 className="text-3xl font-bold mb-4">
-                A TurnKey Approach to Compliance
-              </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 TurnKey Compliance takes a collaborative, personalized approach to your security, partnering with you to create programs that meet industry standards. Our goal is to manage the complexities of the audit process on your behalf, allowing you to concentrate on your business.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="bg-accent text-white px-6 py-3 font-medium hover:bg-blue-700 transition-colors rounded-md">
+                <Link href="/contact" className="bg-accent text-white px-6 py-3 font-medium hover:bg-accent/80 transition-colors rounded-2xl">
                   Get Started
                 </Link>
-                <Link href="/services" className="border border-gray-300 text-gray-700 px-6 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
+                <Link href="/services" className="bg-turnkey text-white px-6 py-3 font-medium hover:bg-turnkey-light transition-colors rounded-2xl">
                   Our Services
                 </Link>
               </div>
@@ -213,7 +233,7 @@ export default function About() {
                   alt="Jason - Founder of TurnKey Compliance"
                   width={384}
                   height={384}
-                  className="relative z-10 w-96 h-96 object-cover shadow-lg rounded-bl-4xl rounded-tr-4xl"
+                  className="relative z-10 w-112 h-112 object-cover shadow-lg rounded-bl-4xl rounded-tr-4xl"
                 />
               </div>
             </div>
@@ -258,10 +278,10 @@ export default function About() {
             Let&apos;s work together to make compliance your competitive advantage.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors rounded-md">
+            <Link href="/contact" className="bg-white text-gray-900 px-8 py-3 font-medium hover:bg-gray-100 transition-colors rounded-2xl">
               Get Started
             </Link>
-            <Link href="/services" className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-md">
+            <Link href="/services" className="border border-white text-white px-8 py-3 font-medium hover:bg-white/10 transition-colors rounded-2xl">
               Learn More
             </Link>
           </div>

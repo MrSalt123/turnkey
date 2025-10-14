@@ -1,7 +1,7 @@
 'use client';
-import { Heart, ArrowLeft, AlertTriangle, CheckCircle, Shield, Users, Lock, Eye, FileText } from 'lucide-react';
+import { Globe, ArrowLeft, CheckCircle, Shield, Users, Settings, Database } from 'lucide-react';
 
-export default function HIPAAPage() {
+export default function NIS2Page() {
   return (
     <div className="min-h-screen relative">
       {/* Hero section */}
@@ -24,14 +24,14 @@ export default function HIPAAPage() {
             {/* Left column - Icon, Title, Button */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <Heart size={48} className="text-white" />
+                <Globe size={48} className="text-white" />
                 <h1 className="text-white text-4xl font-bold">
-                  HIPAA
+                  NIS2
                 </h1>
               </div>
               <div className="relative inline-block">
                 <button className="relative z-10 bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border">
-                  Get HIPAA Assessment
+                  Get NIS2 Assessment
                 </button>
                 <div
                   className="absolute -right-1 -bottom-1 w-full h-full"
@@ -43,7 +43,7 @@ export default function HIPAAPage() {
             {/* Right column - Content */}
             <div>
               <p className="text-white/90 text-xl leading-relaxed">
-                The Health Insurance Portability and Accountability Act (HIPAA) protects sensitive patient health information and ensures its privacy and security. It applies to healthcare providers, health plans, and healthcare clearinghouses, as well as their business associates.
+                The Network and Information Systems Directive 2 (NIS2) is the EU directive on measures for a high common level of cybersecurity across the Union. It expands the scope and strengthens the security requirements for critical infrastructure.
               </p>
             </div>
           </div>
@@ -56,13 +56,13 @@ export default function HIPAAPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-gray-900 mb-6">
-                What is HIPAA?
+                What is NIS2?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                HIPAA establishes national standards for the protection of certain health information, known as Protected Health Information (PHI). It consists of several rules including the Privacy Rule, Security Rule, and Breach Notification Rule.
+                NIS2 is the updated EU directive that significantly expands the scope of entities required to implement cybersecurity measures. It covers a broader range of sectors and introduces stricter requirements for risk management, incident reporting, and supply chain security.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                The regulation applies to covered entities (healthcare providers, health plans, healthcare clearinghouses) and their business associates who handle PHI in any form or medium.
+                The directive aims to create a high common level of cybersecurity across the EU by harmonizing security requirements and strengthening cooperation between member states.
               </p>
             </div>
             <div className="h-full">
@@ -70,19 +70,19 @@ export default function HIPAAPage() {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Enhanced patient trust and confidence</p>
+                  <p className="text-gray-700">EU market access compliance</p>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Reduced risk of costly violations</p>
+                  <p className="text-gray-700">Enhanced cybersecurity posture</p>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Improved data security posture</p>
+                  <p className="text-gray-700">Reduced regulatory risk</p>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
-                  <p className="text-gray-700">Competitive advantage in healthcare</p>
+                  <p className="text-gray-700">Improved supply chain security</p>
                 </li>
               </ul>
             </div>
@@ -90,94 +90,94 @@ export default function HIPAAPage() {
         </div>
       </div>
 
-      {/* HIPAA Rules */}
+      {/* Key Requirements */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-gray-900 mb-4">
-              Key HIPAA Rules
+              Key Requirements
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              HIPAA consists of several interconnected rules that work together to protect patient health information and ensure its proper handling.
+              NIS2 introduces comprehensive cybersecurity requirements across multiple domains to ensure robust protection of network and information systems.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Privacy Rule */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Eye size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Privacy Rule
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                Establishes standards for the use and disclosure of PHI and gives patients rights over their health information, including access and amendment rights.
-              </p>
-            </div>
-
-            {/* Security Rule */}
+            {/* Risk Management */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Security Rule
+                  Risk Management
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Sets standards for the protection of electronic PHI through administrative, physical, and technical safeguards to ensure confidentiality, integrity, and availability.
+                Comprehensive risk management policies and procedures to identify, assess, and mitigate cybersecurity risks.
               </p>
             </div>
 
-            {/* Breach Notification Rule */}
+            {/* Incident Reporting */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <AlertTriangle size={32} className="text-black" />
+                <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Breach Notification Rule
+                  Incident Reporting
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Requires covered entities to notify individuals, HHS, and media of breaches of unsecured PHI within specified timeframes based on the size of the breach.
+                Mandatory reporting of significant cybersecurity incidents to competent authorities within 24 hours.
               </p>
             </div>
 
-            {/* Administrative Safeguards */}
+            {/* Supply Chain Security */}
+            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+              <div className="flex items-center gap-4 mb-4">
+                <Settings size={32} className="text-black" />
+                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
+                  Supply Chain Security
+                </h4>
+              </div>
+              <p className="text-gray-600 text-base">
+                Enhanced security measures for supply chains and supplier relationships to prevent cyber threats.
+              </p>
+            </div>
+
+            {/* Business Continuity */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Administrative Safeguards
+                  Business Continuity
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Policies, procedures, and workforce training programs to manage the conduct of workforce members in relation to PHI protection.
+                Business continuity and crisis management plans to ensure continued operation during cybersecurity incidents.
               </p>
             </div>
 
-            {/* Physical Safeguards */}
+            {/* Training & Awareness */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <Lock size={32} className="text-black" />
+                <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Physical Safeguards
+                  Training & Awareness
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Physical measures, policies, and procedures to protect electronic information systems and related buildings from natural and environmental hazards.
+                Regular cybersecurity training and awareness programs for all personnel to build security culture.
               </p>
             </div>
 
-            {/* Technical Safeguards */}
+            {/* Access Control */}
             <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
               <div className="flex items-center gap-4 mb-4">
-                <FileText size={32} className="text-black" />
+                <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Technical Safeguards
+                  Access Control
                 </h4>
               </div>
               <p className="text-gray-600 text-base">
-                Technology and policies that protect and control access to PHI, including access controls, audit controls, and transmission security.
+                Robust access control mechanisms and authentication procedures to protect network and information systems.
               </p>
             </div>
           </div>
@@ -187,11 +187,11 @@ export default function HIPAAPage() {
       {/* CTA Section */}
       <div className="py-16" style={{ backgroundColor: 'var(--color-turnkey)' }}>
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-white text-gray-900 mb-6">
-            Ready to Ensure HIPAA Compliance?
+          <h2 className="text-white text-3xl font-bold mb-6">
+            Ready to Implement NIS2?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Let our experts guide you through HIPAA compliance and help you protect patient health information while avoiding costly violations.
+            Let our experts guide you through NIS2 compliance and help you meet the EU's cybersecurity requirements while protecting your critical systems.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">

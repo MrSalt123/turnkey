@@ -2,21 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-// --- Define a specific type for a process step ---
-interface ProcessStep {
-  id: number;
-  title: string;
-  description: string;
-}
-
-// --- Process steps data ---
-const processSteps: ProcessStep[] = [
-  { id: 1, title: 'Gap Analysis', description: 'We learn your business and tech to identify compliance gaps.' },
-  { id: 2, title: 'Design', description: 'We design practical policies and controls for your unique operations.' },
-  { id: 3, title: 'Prep', description: 'We conduct readiness assessments and internal audits.' },
-  { id: 4, title: 'Coordination', description: 'We manage external auditors and streamline the evidence process.' },
-];
-
 const HowWeWork = () => {
   return (
     <div className="py-24 bg-background">
@@ -48,35 +33,77 @@ const HowWeWork = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left column - 2x2 Grid of Step Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {processSteps.map((step, index) => {
-              const useAccent = index === 0 || index === 3;
-              const borderColor = useAccent ? 'border-accent' : 'border-accent-light';
-              const shadowColor = useAccent ? 'var(--color-accent)' : 'var(--color-accent-light)';
-              const borderRadius = (index % 2 === 1) ? 'rounded-tr-4xl rounded-bl-4xl' : 'rounded-tl-4xl rounded-br-4xl';
-              
-              return (
-                <div 
-                  key={step.id} 
-                  className={`bg-white p-4 md:p-6 border-2 ${borderColor} ${borderRadius} transition-all duration-300 hover:shadow-lg`}
-                  style={{ boxShadow: `8px 8px 0px ${shadowColor}`, minHeight: '200px' }}
-                >
-                  {/* Step Number and Title */}
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-2xl tabular-nums text-black/70 font-semibold">
-                      0{index + 1}
-                    </span>
-                    <h5 className="text-lg font-semibold">
-                      {step.title}
-                    </h5>
-                  </div>
-                  
-                  {/* Description */}
-                  <p className="text-gray-600 text-base">
-                    {step.description}
-                  </p>
-                </div>
-              );
-            })}
+            {/* Card 1 - Gap Analysis */}
+            <div 
+              className="bg-white p-4 md:p-6 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '200px' }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl tabular-nums text-black/70 font-semibold">
+                  01
+                </span>
+                <h5 className="text-lg font-semibold">
+                  Gap Analysis
+                </h5>
+              </div>
+              <p className="text-gray-600 text-base">
+                We learn your business and tech to identify compliance gaps.
+              </p>
+            </div>
+
+            {/* Card 2 - Design */}
+            <div 
+              className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '200px' }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl tabular-nums text-black/70 font-semibold">
+                  02
+                </span>
+                <h5 className="text-lg font-semibold">
+                  Design
+                </h5>
+              </div>
+              <p className="text-gray-600 text-base">
+                We design practical policies and controls for your unique operations.
+              </p>
+            </div>
+
+            {/* Card 3 - Prep */}
+            <div 
+              className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '200px' }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl tabular-nums text-black/70 font-semibold">
+                  03
+                </span>
+                <h5 className="text-lg font-semibold">
+                  Prep
+                </h5>
+              </div>
+              <p className="text-gray-600 text-base">
+                We conduct readiness assessments and internal audits.
+              </p>
+            </div>
+
+            {/* Card 4 - Coordination */}
+            <div 
+              className="bg-white p-4 md:p-6 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg"
+              style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '200px' }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl tabular-nums text-black/70 font-semibold">
+                  04
+                </span>
+                <h5 className="text-lg font-semibold">
+                  Coordination
+                </h5>
+              </div>
+              <p className="text-gray-600 text-base">
+                We manage external auditors and streamline the evidence process.
+              </p>
+            </div>
           </div>
           
           {/* Right column - Beyond the Audit Content */}

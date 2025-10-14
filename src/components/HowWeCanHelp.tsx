@@ -18,7 +18,7 @@ export default function HowWeCanHelp() {
     <section className="py-12 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with 2/3 Text and 1/3 Image Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-12 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center  md:mb-16">
           <div className="lg:col-span-2">
             <h2 className="text-4xl font-bold mb-4">
               How TurnKey Can Help

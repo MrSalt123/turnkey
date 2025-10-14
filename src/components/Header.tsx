@@ -114,7 +114,7 @@ export default function Header() {
       {/* === MOBILE MENU DROPDOWN - REFACTORED === */}
       <div className="md:hidden relative">
         <div 
-          className={`absolute top-0 left-0 w-full shadow-2xl overflow-hidden transition-all duration-300 ease-in-out z-40 ${
+          className={`absolute top-0 left-0 w-full shadow-2xl overflow-hidden transition-all duration-600 ease-in-out z-40 ${
             isMobileMenuOpen ? 'max-h-[30rem] opacity-100' : 'max-h-0 opacity-0'
           }`}
           style={{ backgroundColor: 'var(--color-turnkey)' }}
