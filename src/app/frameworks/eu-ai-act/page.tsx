@@ -90,74 +90,6 @@ export default function EUAIActPage() {
         </div>
       </div>
 
-      {/* Risk Categories */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-gray-900 mb-4">
-              AI Risk Categories
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              The EU AI Act categorizes AI systems into four risk levels, each with specific compliance requirements and obligations.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Minimal Risk */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Minimal Risk
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                AI systems with minimal risk, such as spam filters or video games, require no specific compliance measures.
-              </p>
-            </div>
-
-            {/* Limited Risk */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Bot size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Limited Risk
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                AI systems with limited risk, like chatbots, must comply with transparency obligations to inform users they are interacting with AI.
-              </p>
-            </div>
-
-            {/* High Risk */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Database size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  High Risk
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                High-risk AI systems, such as those used in critical infrastructure or employment decisions, require comprehensive compliance measures.
-              </p>
-            </div>
-
-            {/* Prohibited */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Settings size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Prohibited
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                AI systems that pose unacceptable risks, such as social scoring or manipulative AI, are prohibited from use in the EU.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Compliance Requirements */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,7 +104,7 @@ export default function EUAIActPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Risk Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -185,7 +117,7 @@ export default function EUAIActPage() {
             </div>
 
             {/* Data Governance */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -198,7 +130,7 @@ export default function EUAIActPage() {
             </div>
 
             {/* Transparency */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -211,7 +143,7 @@ export default function EUAIActPage() {
             </div>
 
             {/* Human Oversight */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -224,7 +156,7 @@ export default function EUAIActPage() {
             </div>
 
             {/* Accuracy & Robustness */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -237,7 +169,7 @@ export default function EUAIActPage() {
             </div>
 
             {/* Conformity Assessment */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>

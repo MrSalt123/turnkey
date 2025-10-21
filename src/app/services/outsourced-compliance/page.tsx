@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowLeft } from 'lucide-react';
 
 export default function OutsourcedCompliancePage() {
   return (
@@ -11,6 +11,16 @@ export default function OutsourcedCompliancePage() {
         style={{ backgroundColor: 'var(--color-turnkey)' }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <a 
+              href="/services" 
+              className="inline-flex items-center text-white/80 hover:text-white transition-colors mb-6"
+            >
+              <ArrowLeft size={20} className="mr-2" />
+              Back to Services
+            </a>
+          </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left column - Content */}
             <div>
@@ -32,13 +42,13 @@ export default function OutsourcedCompliancePage() {
               <div className="relative">
                 <Image
                   src="/handshake.jpg"
-                  alt="Outsourced Compliance Service"
+                  alt="TurnKey Compliance Team Strategy"
                   width={512}
                   height={448}
-                  className="relative z-10 w-full max-w-lg object-cover h-112"
+                  className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
                 />
                 <div
-                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
                   style={{ backgroundColor: 'var(--color-accent)' }}
                 />
               </div>
@@ -50,54 +60,37 @@ export default function OutsourcedCompliancePage() {
       {/* Problem/Solution Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-gray-900 mb-6">
                 What It Is & Why It Matters
               </h2>
-              <div className="space-y-4 text-gray-600">
-                <p className="text-lg leading-relaxed">
-                  Outsourced compliance is a comprehensive service where we become your dedicated compliance 
-                  team, managing all aspects of your compliance program from strategy to execution. It&apos;s like 
-                  having a full compliance department without the cost and complexity.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  <strong>Critical business problems it solves:</strong>
-                </p>
-                <ul className="space-y-2 ml-4">
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Eliminate the need to hire and manage compliance staff</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Reduce compliance costs by up to 60% compared to in-house teams</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Access expert knowledge without the learning curve</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Ensure continuous compliance with minimal internal effort</span>
-                  </li>
-                </ul>
-              </div>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Outsourced compliance is a comprehensive service where we become your dedicated compliance 
+                team, managing all aspects of your compliance program from strategy to execution. It&apos;s like 
+                having a full compliance department without the cost and complexity.
+              </p>
             </div>
-            <div className="flex justify-center">
-              <div className="relative">
-                <Image
-                  src="/handshake.jpg"
-                  alt="Outsourced Compliance Partnership"
-                  width={512}
-                  height={384}
-                  className="relative z-10 w-full h-auto object-cover max-w-lg aspect-[4/3]"
-                />
-                <div
-                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full"
-                  style={{ backgroundColor: 'var(--color-accent)' }}
-                />
-              </div>
+            <div>
+              <h3 className="text-gray-900 mb-6">Critical business problems it solves:</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Eliminate the need to hire and manage compliance staff</p>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Reduce compliance costs by up to 60% compared to in-house teams</p>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Access expert knowledge without the learning curve</p>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="w-5 h-5 md:w-7 md:h-7 mr-3" style={{ color: 'var(--color-accent)' }} />
+                  <p className="text-gray-700">Ensure continuous compliance with minimal internal effort</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -116,74 +109,74 @@ export default function OutsourcedCompliancePage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
                   Virtual Compliance Officer (vCISO/vCompliance)
                 </h5>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Serving as your official Virtual Security or Privacy Officer with quarterly risk and compliance meetings.
               </p>
             </div>
             
-            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
                   Contract & Vendor Management
                 </h5>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Reviewing customer and vendor contracts for security and privacy obligations, managing third-party risk programs.
               </p>
             </div>
             
-            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
                   Workforce Training & Awareness
                 </h5>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Providing tailored security and privacy training for employees to build a culture of compliance.
               </p>
             </div>
             
-            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
                   Complete Policy Framework
                 </h5>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Comprehensive policies and procedures tailored to your business and industry requirements.
               </p>
             </div>
             
-            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
                   Continuous Monitoring
                 </h5>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 24/7 monitoring of your compliance posture with real-time alerts and updates.
               </p>
             </div>
             
-            <div className="bg-white p-4 md:p-8 border-2 border-black transition-all duration-300 hover:shadow-lg hover:border-gray-300" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <CheckCircle size={32} className="text-black" />
                 <h5 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
                   Regular Reporting & Updates
                 </h5>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Monthly compliance reports and ongoing advisory updates as regulations evolve.
               </p>
             </div>

@@ -104,53 +104,53 @@ export default function ISO27001Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Risk Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <AlertTriangle size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Risk Management
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Systematic identification, assessment, and treatment of information security risks to protect organizational assets.
               </p>
             </div>
 
             {/* Security Controls */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Security Controls
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 114 security controls across 14 categories to protect information assets and manage security risks.
               </p>
             </div>
 
             {/* Management System */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Management System
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Structured approach to managing information security through policies, procedures, and continuous monitoring.
               </p>
             </div>
 
             {/* People & Training */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   People & Training
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Ensuring all personnel are aware of their information security responsibilities and are properly trained to fulfill them.
               </p>
             </div>

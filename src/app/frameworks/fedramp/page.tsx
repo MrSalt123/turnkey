@@ -90,147 +90,6 @@ export default function FedRAMPPage() {
         </div>
       </div>
 
-      {/* Authorization Paths */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-gray-900 mb-4">
-              FedRAMP Authorization Paths
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              FedRAMP offers three authorization paths to accommodate different business models and risk tolerances for cloud service providers.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* FedRAMP High */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  FedRAMP High
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base mb-4">
-                Authorization for cloud services that handle high-impact data, including sensitive but unclassified information.
-              </p>
-              <ul className="text-gray-600 text-sm space-y-2">
-                <li>• Highest security requirements</li>
-                <li>• Comprehensive assessment</li>
-                <li>• Annual authorization renewal</li>
-                <li>• Extensive documentation</li>
-              </ul>
-            </div>
-
-            {/* FedRAMP Moderate */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Database size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  FedRAMP Moderate
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base mb-4">
-                Authorization for cloud services that handle moderate-impact data, the most common authorization level.
-              </p>
-              <ul className="text-gray-600 text-sm space-y-2">
-                <li>• Standard security requirements</li>
-                <li>• Comprehensive assessment</li>
-                <li>• Annual authorization renewal</li>
-                <li>• Moderate documentation</li>
-              </ul>
-            </div>
-
-            {/* FedRAMP Low */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Cloud size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  FedRAMP Low
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base mb-4">
-                Authorization for cloud services that handle low-impact data with minimal security requirements.
-              </p>
-              <ul className="text-gray-600 text-sm space-y-2">
-                <li>• Basic security requirements</li>
-                <li>• Simplified assessment</li>
-                <li>• Annual authorization renewal</li>
-                <li>• Minimal documentation</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Authorization Process */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-gray-900 mb-4">
-              Authorization Process Steps
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              The FedRAMP authorization process involves multiple phases to ensure cloud services meet federal security requirements.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Readiness Assessment */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Settings size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Readiness Assessment
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                Initial assessment to evaluate the cloud service provider's readiness for FedRAMP authorization.
-              </p>
-            </div>
-
-            {/* Security Package Development */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Database size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Security Package
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                Development of comprehensive security documentation including System Security Plan (SSP) and supporting documentation.
-              </p>
-            </div>
-
-            {/* Third-Party Assessment */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Third-Party Assessment
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                Independent assessment by a FedRAMP-accredited Third-Party Assessment Organization (3PAO).
-              </p>
-            </div>
-
-            {/* Authorization Decision */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Users size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Authorization Decision
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base">
-                Authorizing Official (AO) review and authorization decision based on the security assessment and risk evaluation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Key Security Controls */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -245,7 +104,7 @@ export default function FedRAMPPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Access Control */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -258,7 +117,7 @@ export default function FedRAMPPage() {
             </div>
 
             {/* Continuous Monitoring */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -271,7 +130,7 @@ export default function FedRAMPPage() {
             </div>
 
             {/* Incident Response */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -284,7 +143,7 @@ export default function FedRAMPPage() {
             </div>
 
             {/* Data Protection */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Cloud size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -297,7 +156,7 @@ export default function FedRAMPPage() {
             </div>
 
             {/* System & Communications Protection */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -310,7 +169,7 @@ export default function FedRAMPPage() {
             </div>
 
             {/* Configuration Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>

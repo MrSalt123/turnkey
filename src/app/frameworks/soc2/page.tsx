@@ -104,66 +104,66 @@ export default function SOC2Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Security */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Lock size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Security
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Protection against unauthorized access to systems and data through physical and logical access controls.
               </p>
             </div>
 
             {/* Availability */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Clock size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Availability
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Systems and data are available for operation and use as committed or agreed upon.
               </p>
             </div>
 
             {/* Processing Integrity */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <FileCheck size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Processing Integrity
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 System processing is complete, valid, accurate, timely, and authorized.
               </p>
             </div>
 
             {/* Confidentiality */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Eye size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Confidentiality
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Information designated as confidential is protected according to the entity&apos;s objectives.
               </p>
             </div>
 
             {/* Privacy */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black md:col-span-2 lg:col-span-1" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col md:col-span-2 lg:col-span-1" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Privacy
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Personal information is collected, used, retained, disclosed, and disposed of in conformity with commitments.
               </p>
             </div>

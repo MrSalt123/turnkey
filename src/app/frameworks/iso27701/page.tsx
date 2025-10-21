@@ -104,79 +104,79 @@ export default function ISO27701Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Privacy Policies */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Privacy Policies
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Development and implementation of comprehensive privacy policies that govern how personal data is collected, processed, and protected.
               </p>
             </div>
 
             {/* Data Subject Rights */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <UserCheck size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Data Subject Rights
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Processes and procedures to handle data subject rights including access, rectification, erasure, and portability requests.
               </p>
             </div>
 
             {/* Data Processing Records */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Data Processing Records
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Comprehensive record-keeping of data processing activities, purposes, and legal bases for processing personal data.
               </p>
             </div>
 
             {/* Consent Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Eye size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Consent Management
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Systems and processes for obtaining, managing, and documenting consent for personal data processing activities.
               </p>
             </div>
 
             {/* Third-Party Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <ClipboardCheck size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Third-Party Management
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Due diligence and ongoing monitoring of third-party processors to ensure they meet privacy and security requirements.
               </p>
             </div>
 
             {/* Privacy Impact Assessments */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-8 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Privacy Impact Assessments
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Systematic assessment of privacy risks associated with new projects or changes to existing data processing activities.
               </p>
             </div>

@@ -104,79 +104,79 @@ export default function ISO42001Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* AI Governance */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   AI Governance
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Establishing governance structures, policies, and procedures to oversee AI development, deployment, and management activities.
               </p>
             </div>
 
             {/* Risk Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Brain size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Risk Management
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Systematic identification, assessment, and mitigation of AI-related risks including bias, fairness, transparency, and safety concerns.
               </p>
             </div>
 
             {/* Human Oversight */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Human Oversight
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Ensuring appropriate human involvement in AI decision-making processes and maintaining human accountability for AI outcomes.
               </p>
             </div>
 
             {/* Data Quality */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Data Quality
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Ensuring high-quality, representative, and unbiased data for AI system training and operation to prevent discriminatory outcomes.
               </p>
             </div>
 
             {/* Transparency */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tl-4xl rounded-br-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Transparency
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Providing clear information about AI system capabilities, limitations, and decision-making processes to users and stakeholders.
               </p>
             </div>
 
             {/* Continuous Monitoring */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
                   Continuous Monitoring
                 </h4>
               </div>
-              <p className="text-gray-600 text-base">
+              <p className="text-gray-600 text-base flex-grow">
                 Ongoing monitoring and evaluation of AI system performance to ensure continued compliance with ethical and technical standards.
               </p>
             </div>

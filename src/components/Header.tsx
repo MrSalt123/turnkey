@@ -50,10 +50,10 @@ export default function Header() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <Link href="/" className={`${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200`}>
-                <span className="label uppercase">Home</span>
+                <span className="label ">Home</span>
               </Link>
               <Link href="/about" className={`${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200`}>
-                <span className="label uppercase">About</span>
+                <span className="label ">About</span>
               </Link>
               <div
                 className="relative"
@@ -64,7 +64,7 @@ export default function Header() {
                   href="/services"
                   className={`relative ${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200 cursor-pointer block`}
                 >
-                  <div className="label uppercase">Services</div>
+                  <div className="label ">Services</div>
                   <svg className="w-3 h-3 text-gray-400 absolute -bottom-1.5 left-1/2 transform -translate-x-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -79,9 +79,9 @@ export default function Header() {
                 )}
               </div>
               <Link href="/frameworks" className={`${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200`}>
-                <span className="label uppercase">Frameworks</span>
+                <span className="label ">Frameworks</span>
               </Link>
-              <Link href="/contact" className="px-6 py-2 rounded-2xl text-white text-lg font-semibold transition-colors duration-200 uppercase" style={{ backgroundColor: 'var(--color-accent)' }}>
+              <Link href="/contact" className="px-6 py-2 rounded-2xl text-white text-lg font-semibold transition-colors duration-200" style={{ backgroundColor: 'var(--color-accent)' }}>
                 Contact Us
               </Link>
             </div>
@@ -122,18 +122,18 @@ export default function Header() {
         >
           <div className="px-4 pt-2 pb-6 space-y-2">
             <Link href="/" className="block py-3 text-white hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="text-lg font-medium uppercase">Home</span>
+              <span className="text-lg font-medium ">Home</span>
             </Link>
             <Link href="/about" className="block py-3 text-white hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="text-lg font-medium uppercase">About</span>
+              <span className="text-lg font-medium ">About</span>
             </Link>
             <Link href="/services" className="block py-3 text-white hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="text-lg font-medium uppercase">Services</span>
+              <span className="text-lg font-medium ">Services</span>
             </Link>
             <Link href="/frameworks" className="block py-3 text-white hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-              <span className="text-lg font-medium uppercase">Frameworks</span>
+              <span className="text-lg font-medium ">Frameworks</span>
             </Link>
-            <Link href="/contact" className="block py-2 px-4 rounded-2xl text-white font-medium uppercase mt-4 w-fit mb-2" style={{ backgroundColor: 'var(--color-accent)' }} onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="/contact" className="block py-2 px-4 rounded-2xl text-white font-medium  mt-4 w-fit mb-2" style={{ backgroundColor: 'var(--color-accent)' }} onClick={() => setIsMobileMenuOpen(false)}>
               Contact Us
             </Link>
           </div>

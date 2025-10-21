@@ -43,7 +43,7 @@ export default function HowWeCanHelp() {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Image (1/3) */}
           <div className="flex justify-center">
             <div className="relative">
@@ -62,7 +62,7 @@ export default function HowWeCanHelp() {
           </div>
 
           {/* Right column - Paragraph and Services list (2/3) */}
-          <div className="lg:col-span-2 flex flex-col justify-center">
+          <div className="lg:col-span-1 flex flex-col justify-center">
             <ul className="space-y-6">
               {services.map((service, index) => (
                 <li key={index} className="flex items-start gap-3">

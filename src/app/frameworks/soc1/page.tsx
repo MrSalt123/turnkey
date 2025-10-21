@@ -90,60 +90,6 @@ export default function SOC1Page() {
         </div>
       </div>
 
-      {/* Report Types */}
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-gray-900 mb-4">
-              SOC 1 Report Types
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              SOC 1 reports come in two types, each designed for different purposes and providing different levels of assurance about internal controls.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Type I Report */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Database size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Type I Report
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base mb-4">
-                A Type I report provides an opinion on the suitability of the design of internal controls over financial reporting at a specific point in time.
-              </p>
-              <ul className="text-gray-600 text-sm space-y-2">
-                <li>• Covers control design effectiveness</li>
-                <li>• Point-in-time assessment</li>
-                <li>• Suitable for initial evaluations</li>
-                <li>• Lower cost and faster completion</li>
-              </ul>
-            </div>
-
-            {/* Type II Report */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
-              <div className="flex items-center gap-4 mb-4">
-                <Shield size={32} className="text-black" />
-                <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
-                  Type II Report
-                </h4>
-              </div>
-              <p className="text-gray-600 text-base mb-4">
-                A Type II report provides an opinion on both the design and operating effectiveness of internal controls over financial reporting over a specified period.
-              </p>
-              <ul className="text-gray-600 text-sm space-y-2">
-                <li>• Covers both design and operating effectiveness</li>
-                <li>• Period of time assessment (typically 6-12 months)</li>
-                <li>• More comprehensive and valuable</li>
-                <li>• Higher cost but greater assurance</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Key Control Areas */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -158,7 +104,7 @@ export default function SOC1Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Access Controls */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -171,7 +117,7 @@ export default function SOC1Page() {
             </div>
 
             {/* Data Processing */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Database size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -184,7 +130,7 @@ export default function SOC1Page() {
             </div>
 
             {/* Change Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -197,7 +143,7 @@ export default function SOC1Page() {
             </div>
 
             {/* Monitoring */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Users size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -210,7 +156,7 @@ export default function SOC1Page() {
             </div>
 
             {/* Backup & Recovery */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Shield size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
@@ -223,7 +169,7 @@ export default function SOC1Page() {
             </div>
 
             {/* Security Management */}
-            <div className="bg-white p-4 md:p-8 border-2 border-black" style={{ boxShadow: '6px 6px 0px var(--color-accent), 6px 6px 0px 2px #000000' }}>
+            <div className="bg-white p-4 md:p-6 border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl transition-all duration-300 hover:shadow-lg flex flex-col" style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}>
               <div className="flex items-center gap-4 mb-4">
                 <Settings size={32} className="text-black" />
                 <h4 className="text-xl font-semibold" style={{ color: 'var(--color-accent)' }}>
