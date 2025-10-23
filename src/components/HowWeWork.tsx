@@ -40,7 +40,7 @@ const HowWeWork = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl tabular-nums text-black/70 font-semibold">
-                  01
+                  1
                 </span>
                 <h5 className="text-lg font-semibold">
                   Gap Analysis
@@ -58,7 +58,7 @@ const HowWeWork = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl tabular-nums text-black/70 font-semibold">
-                  02
+                  2
                 </span>
                 <h5 className="text-lg font-semibold">
                   Design
@@ -76,7 +76,7 @@ const HowWeWork = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl tabular-nums text-black/70 font-semibold">
-                  03
+                  3
                 </span>
                 <h5 className="text-lg font-semibold">
                   Prep
@@ -94,7 +94,7 @@ const HowWeWork = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-2xl tabular-nums text-black/70 font-semibold">
-                  04
+                  4
                 </span>
                 <h5 className="text-lg font-semibold">
                   Coordination

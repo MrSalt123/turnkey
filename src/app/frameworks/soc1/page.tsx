@@ -43,7 +43,7 @@ export default function SOC1Page() {
             {/* Right column - Content */}
             <div>
               <p className="text-white/90 text-xl leading-relaxed">
-                SOC 1 reports focus on internal controls over financial reporting (ICFR) for service organizations. These reports are essential for organizations that provide services affecting their clients' financial reporting.
+                SOC 1 reports focus on internal controls over financial reporting (ICFR) for service organizations. These reports are essential for organizations that provide services affecting their clients&apos; financial reporting.
               </p>
             </div>
           </div>
@@ -59,10 +59,10 @@ export default function SOC1Page() {
                 What is SOC 1?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                SOC 1 (Service Organization Control 1) reports examine internal controls over financial reporting at service organizations. These reports are specifically designed for service organizations that provide services that could impact their clients' financial statements.
+                SOC 1 (Service Organization Control 1) reports examine internal controls over financial reporting at service organizations. These reports are specifically designed for service organizations that provide services that could impact their clients&apos; financial statements.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                SOC 1 reports help service organizations demonstrate to their clients and their clients' auditors that they have appropriate controls in place to protect financial information and ensure accurate financial reporting.
+                SOC 1 reports help service organizations demonstrate to their clients and their clients&apos; auditors that they have appropriate controls in place to protect financial information and ensure accurate financial reporting.
               </p>
             </div>
             <div className="h-full">
@@ -88,7 +88,7 @@ export default function SOC1Page() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
       {/* Key Control Areas */}
       <div className="py-16">

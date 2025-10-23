@@ -7,25 +7,26 @@ const techStackLogos = [
     name: 'AWS'
   },
   {
+    src: '/logos/gcp.svg',
+    alt: 'GCP',
+    name: 'GCP'
+  },
+  {
     src: '/logos/azure.svg',
     alt: 'Microsoft Azure',
     name: 'Azure'
-  },
-  {
-    src: '/logos/slack.svg',
-    alt: 'Slack',
-    name: 'Slack'
-  },
-  {
-    src: '/logos/jira.svg',
-    alt: 'Atlassian JIRA',
-    name: 'JIRA'
   },
   {
     src: '/logos/salesforce.svg',
     alt: 'Salesforce',
     name: 'Salesforce'
   },
+  {
+    src: '/logos/jira.svg',
+    alt: 'Atlassian JIRA',
+    name: 'JIRA'
+  },
+
   {
     src: '/logos/microsoft365.svg',
     alt: 'Microsoft 365',

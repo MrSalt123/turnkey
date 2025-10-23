@@ -6,69 +6,7 @@ import Link from 'next/link';
 import ValuesSection from '@/components/ValuesSection';
 
 export default function About() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [counts, setCounts] = useState({
-    auditPass: 0,
-    yearsExperience: 0,
-    fasterAudit: 0,
-    industriesServed: 0
-  });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    const statsElement = document.getElementById('stats-section');
-    if (statsElement) {
-      observer.observe(statsElement);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!isVisible) return;
-
-    const targetCounts = {
-      auditPass: 100,
-      yearsExperience: 50,
-      fasterAudit: 40,
-      industriesServed: 15
-    };
-
-    const duration = 2000; // 2 seconds
-    const steps = 60; // 60 steps for smooth animation
-    const stepDuration = duration / steps;
-
-    const intervals = Object.keys(targetCounts).map((key) => {
-      const target = targetCounts[key as keyof typeof targetCounts];
-      const increment = target / steps;
-      let current = 0;
-
-      return setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          current = target;
-          clearInterval(intervals.find(i => i === intervals[Object.keys(targetCounts).indexOf(key)])!);
-        }
-
-        setCounts(prev => ({
-          ...prev,
-          [key]: Math.floor(current)
-        }));
-      }, stepDuration);
-    });
-
-    return () => {
-      intervals.forEach(interval => clearInterval(interval));
-    };
-  }, [isVisible]);
   return (
     <div className="min-h-screen relative">
       <div

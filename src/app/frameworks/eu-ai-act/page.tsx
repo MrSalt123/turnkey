@@ -62,7 +62,7 @@ export default function EUAIActPage() {
                 The EU AI Act establishes the first comprehensive legal framework for artificial intelligence systems. It categorizes AI systems based on risk levels and imposes different requirements accordingly, from minimal obligations to strict compliance requirements.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                The regulation aims to ensure AI systems are trustworthy, respect fundamental rights, and contribute to innovation while maintaining the EU's competitive advantage in AI development.
+                The regulation aims to ensure AI systems are trustworthy, respect fundamental rights, and contribute to innovation while maintaining the EU&apos;s competitive advantage in AI development.
               </p>
             </div>
             <div className="h-full">

@@ -191,7 +191,7 @@ export default function NIS2Page() {
             Ready to Implement NIS2?
           </h2>
           <p className="text-white/90 text-lg mb-8">
-            Let our experts guide you through NIS2 compliance and help you meet the EU's cybersecurity requirements while protecting your critical systems.
+            Let our experts guide you through NIS2 compliance and help you meet the EU&apos;s cybersecurity requirements while protecting your critical systems.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
