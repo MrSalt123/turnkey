@@ -27,7 +27,7 @@ export default function HowWeCanHelp() {
               Comprehensive, audit-ready compliance solutions that strengthen security and privacy, drive efficiency, and build lasting business confidence.
             </p>
             <br />
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            <p className="text-lg text-gray-600 mb-8">
               We help organizations identify risks, strengthen controls, and maintain continuous compliance through tailored, practical solutions across security, privacy, and governance
             </p>
           </div>

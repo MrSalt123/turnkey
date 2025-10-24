@@ -34,7 +34,7 @@ export default function WhoWeAre() {
                 </h3>
               </div>
               <p className="text-gray-600 text-base">
-                Founded by former Big Four professionals, TurnKey applies the same audit-grade standards and proven methodologies those firms use—delivered with the responsiveness of a boutique team.
+                Founded by a former Big Four professional, TurnKey applies the same audit-grade standards and proven methodologies those firms use—delivered with the responsiveness of a boutique team.
               </p>
             </div>
 

@@ -19,8 +19,8 @@ const benefits = [
   },
   {
     icon: <Users className="w-5 h-5 md:w-7 md:h-7 text-black" aria-hidden="true" />,
-    title: "Team Education & Adoption",
-    description: "Strengthen your security culture with tailored training that boosts workforce adoption."
+    title: "Trusted Compliance Partnership",
+    description: "We ensure accountability and act as an extension of your team—your trusted partner through every audit cycle."
   }
 ];
 

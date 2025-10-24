@@ -21,7 +21,7 @@ export default function About() {
                 More Than a Service. <br /> We&apos;re Your Partner.
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
-                We believe in a true partnership, creating personalized compliance programs that align with your business.<br /><br />
+                We believe in a true partnership, creating personalized compliance programs that align with your business goals.<br /><br />
                 Our deep industry knowledge, rooted in Big Four philosophies, becomes your strategic advantage.<br /><br />
                 Founded on the principle of simplifying the audit process, our mission is to empower your business.
               </p>
@@ -32,19 +32,19 @@ export default function About() {
 
             {/* Right column - Image */}
             <div className="flex justify-center">
-            <div className="relative">
-              <Image
-                src="/partner.jpg"
-                alt="TurnKey Compliance Team Strategy"
-                width={512}
-                height={448}
-                className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
-              />
-              <div
-                className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
-                style={{ backgroundColor: 'var(--color-accent)' }}
-              />
-            </div>
+              <div className="relative">
+                <Image
+                  src="/partner.jpg"
+                  alt="TurnKey Compliance Team Strategy"
+                  width={512}
+                  height={448}
+                  className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
+                />
+                <div
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
+                  style={{ backgroundColor: 'var(--color-accent)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function About() {
       {/* Mission section */}
       <div className="py-16 sm:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Section Header */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-16">
             <div className="lg:col-span-2">
@@ -75,7 +75,7 @@ export default function About() {
           {/* Content Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* THIS IS THE MODIFIED SECTION */}
-            <div className="flex justify-center w-full"> 
+            <div className="flex justify-center w-full">
               <div className="relative w-full max-w-lg ">
                 <Image
                   src="/adventure.jpg"
@@ -83,7 +83,7 @@ export default function About() {
                   width={512}
                   height={384}
                   className="relative z-10 w-full h-auto object-cover aspect-[4/3] rounded-tl-4xl rounded-br-4xl"
-                  // REMOVED: max-w-lg
+                // REMOVED: max-w-lg
                 />
                 <div
                   className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
@@ -94,8 +94,8 @@ export default function About() {
             {/* END OF MODIFIED SECTION */}
             <div>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                TurnKey Compliance takes a collaborative, personalized approach to your security, partnering with you to create programs that meet industry standards. Our goal is to manage the complexities of the audit process on your behalf, allowing you to concentrate on your business.
-              </p>
+                TurnKey Compliance takes a collaborative, personalized approach to security and compliance—partnering with you to design programs that meet industry standards. We handle the complexities of the audit process so you can stay focused on your business.
+                </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="bg-accent text-white px-6 py-3 font-medium hover:bg-accent/80 transition-colors rounded-2xl">
                   Get Started

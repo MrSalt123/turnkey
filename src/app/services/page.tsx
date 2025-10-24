@@ -17,12 +17,10 @@ export default function ServicesPage() {
             {/* Left column - Content */}
             <div>
               <h2 className="text-white text-left mb-6">
-                Comprehensive Compliance Solutions to Drive Your Business Forward
+                Clear Compliance. Actionable Results. Audit-Ready.
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
-                We offer a suite of services designed to provide clarity and a turnkey solution to compliance.
-                From gap analysis to ongoing advisory support, we help you build a robust compliance program
-                that protects your business and accelerates growth.
+                We deliver clarity, structure, and accountability through a full suite of compliance services. From gap analysis to ongoing advisory support, TurnKey helps you build and sustain audit-ready programs that protect your business and accelerate growth.
               </p>
               <Link href="/contact" className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors rounded-2xl font-semibold">
                 Get Started Today
@@ -87,6 +85,7 @@ export default function ServicesPage() {
               <h3 className="text-xl font-semibold text-gray-800 mb-4" style={{ color: 'var(--color-accent)' }}>
                 Gap <br />Analysis
               </h3>
+              <h5 className='mb-4'>Compare where your organization stands against compliance frameworks and standards.</h5>
               <p className="text-gray-600 text-base mb-6 flex-grow">
                 Uncover hidden risks and get a clear roadmap for your compliance journey. We identify gaps
                 across your people, processes, and technology to ensure you&apos;re audit-ready.
@@ -112,9 +111,9 @@ export default function ServicesPage() {
               <h3 className="text-xl font-semibold text-gray-800 mb-4" style={{ color: 'var(--color-accent)' }}>
                 Readiness Assessments
               </h3>
+              <h5 className='mb-4'>We can help you prepare for an external audit.</h5>
               <p className="text-gray-600 text-base mb-6 flex-grow">
-                Achieve audit success with our comprehensive readiness assessments. We simulate the audit
-                process and provide a clear path to remediation, ensuring you&apos;re prepared for any compliance review.
+                You know you need to comply with one or more frameworks and need help developing and implementing policies, processes, and controls. We&apos;ll guide you through readiness assessments that simulate the audit process and ensure you&apos;re truly audit-ready
               </p>
               <div className="text-right mt-auto">
                 <Link
@@ -137,9 +136,9 @@ export default function ServicesPage() {
               <h3 className="text-xl font-semibold text-gray-800 mb-4" style={{ color: 'var(--color-accent)' }}>
                 Outsourced Compliance
               </h3>
+              <h5 className='mb-4'>Allow us to manage your audit and compliance program.</h5>
               <p className="text-gray-600 text-base mb-6 flex-grow">
-                Let us handle your compliance program while you focus on growing your business. Our expert
-                team manages all aspects of compliance, from policy development to ongoing monitoring.
+                You already have the foundations for compliance in place—you just need the right team to manage and sustain it. TurnKey provides dedicated compliance management to maintain readiness, coordinate evidence, and support your team year-round
               </p>
               <div className="text-right mt-auto">
                 <Link
@@ -204,37 +203,37 @@ export default function ServicesPage() {
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">Technology Companies</span>
+                  <span className="text-lg text-gray-700">Saas & Cloud Technology</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">Healthcare Organizations</span>
+                  <span className="text-lg text-gray-700">Cybersecurity Providers</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">Financial Services</span>
+                  <span className="text-lg text-gray-700">FinTech & Financial Services</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">E-commerce & Retail</span>
+                  <span className="text-lg text-gray-700">Healthcare & Life Sciences</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">Government Contractors</span>
+                  <span className="text-lg text-gray-700">Government & Defense Contractors</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">Growing Businesses</span>
+                  <span className="text-lg text-gray-700">Manufacturing & Regulated Industries</span>
                 </li>
               </ul>
             </div>

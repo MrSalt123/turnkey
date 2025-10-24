@@ -70,7 +70,7 @@ const frameworks = [
   },
   {
     title: 'ISO 27701',
-    description: 'An international standard extending ISO 27001 to establish a privacy information management system (PIMS) that protects personal data and ensures compliance.',
+    description: 'An international standard establishing a Privacy Information Management System (PIMS) that protects personal data, assures accountability for both controllers and processors, and supports compliance with global privacy laws.',
     path: '/frameworks/iso27701',
   },
 ];
