@@ -14,94 +14,99 @@ export default function ContactForm() {
           </div>
 
           {/* Right column - Contact Form */}
-          <div>
-            <form className="space-y-6">
+          <div className="bg-gray-50 rounded-2xl p-8">
+            <form action="https://formspree.io/f/xrboelzg" method="POST" className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* First Name */}
-                <div className="relative">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                    First Name
+                  </label>
                   <input
                     type="text"
                     id="firstName"
-                    className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 peer"
-                    placeholder=" "
+                    name="firstName"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Your first name"
                     required
                   />
-                  <label
-                    htmlFor="firstName"
-                    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 peer-focus:bg-background peer-focus:px-1 peer-[&:not(:placeholder-shown)]:top-2 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-blue-500 peer-[&:not(:placeholder-shown)]:bg-background peer-[&:not(:placeholder-shown)]:px-1"
-                  >
-                    First Name
-                  </label>
                 </div>
-
-                {/* Last Name */}
-                <div className="relative">
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                    Last Name
+                  </label>
                   <input
                     type="text"
                     id="lastName"
-                    className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 peer"
-                    placeholder=" "
+                    name="lastName"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Your last name"
                     required
                   />
-                  <label
-                    htmlFor="lastName"
-                    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 peer-focus:bg-background peer-focus:px-1 peer-[&:not(:placeholder-shown)]:top-2 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-blue-500 peer-[&:not(:placeholder-shown)]:bg-background peer-[&:not(:placeholder-shown)]:px-1"
-                  >
-                    Last Name
-                  </label>
                 </div>
               </div>
-
-              {/* Phone Number */}
-              <div className="relative">
-                <input
-                  type="tel"
-                  id="phone"
-                  className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 peer"
-                  placeholder=" "
-                  required
-                />
-                <label
-                  htmlFor="phone"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 peer-focus:bg-background peer-focus:px-1 peer-[&:not(:placeholder-shown)]:top-2 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-blue-500 peer-[&:not(:placeholder-shown)]:bg-background peer-[&:not(:placeholder-shown)]:px-1"
-                >
-                  Phone Number
+              
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  Email Address
                 </label>
-              </div>
-
-              {/* Company Email */}
-              <div className="relative">
                 <input
                   type="email"
-                  id="companyEmail"
-                  className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 peer"
-                  placeholder=" "
+                  id="email"
+                  name="email"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="your.email@company.com"
                   required
                 />
-                <label
-                  htmlFor="companyEmail"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 pointer-events-none peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 peer-focus:bg-background peer-focus:px-1 peer-[&:not(:placeholder-shown)]:top-2 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-blue-500 peer-[&:not(:placeholder-shown)]:bg-background peer-[&:not(:placeholder-shown)]:px-1"
-                >
-                  Company Email
-                </label>
               </div>
-
-              {/* How can we help you? */}
-              <div className="relative">
+              
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  Company
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Your company name"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+                  Service Interest
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                >
+                  <option value="">Select a service</option>
+                  <option value="gap-analysis">Gap Analysis</option>
+                  <option value="readiness-assessments">Readiness Assessments</option>
+                  <option value="outsourced-compliance">Outsourced Compliance</option>
+                  <option value="advisory-services">Advisory Services</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  Message
+                </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
-                  className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-                  placeholder="How can we help you?"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Tell us about your compliance needs..."
                   required
                 />
               </div>
-
-              {/* Submit Button */}
+              
               <button
                 type="submit"
-                className="w-full py-3 px-6 rounded-lg text-white font-medium hover:opacity-90 transition-opacity duration-200"
-                style={{ backgroundColor: 'var(--color-turnkey)' }}
+                className="w-full px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-200 uppercase"
               >
                 Send Message
               </button>

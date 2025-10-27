@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
+  const [isFrameworksHovered, setIsFrameworksHovered] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -78,9 +79,38 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <Link href="/frameworks" className={`${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200`}>
-                <span className="label ">Frameworks</span>
-              </Link>
+              <div
+                className="relative"
+                onMouseEnter={() => setIsFrameworksHovered(true)}
+                onMouseLeave={() => setIsFrameworksHovered(false)}
+              >
+                <Link 
+                  href="/frameworks"
+                  className={`relative ${linkAndIconColor} hover:text-accent py-2 transition-colors duration-200 cursor-pointer block`}
+                >
+                  <div className="label ">Frameworks</div>
+                  <svg className="w-3 h-3 text-gray-400 absolute -bottom-1.5 left-1/2 transform -translate-x-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </Link>
+                {isFrameworksHovered && <div className="absolute top-full left-0 right-0 h-4"></div>}
+                {isFrameworksHovered && (
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-64 bg-white shadow-lg border border-gray-200 py-2 z-50">
+                    <Link href="/frameworks/soc2" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOC 2</Link>
+                    <Link href="/frameworks/iso27001" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">ISO 27001</Link>
+                    <Link href="/frameworks/iso27701" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">ISO 27701</Link>
+                    <Link href="/frameworks/sox404" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOX 404</Link>
+                    <Link href="/frameworks/pci" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">PCI DSS</Link>
+                    <Link href="/frameworks/iso42001" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">ISO 42001</Link>
+                    <Link href="/frameworks/gdpr" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">GDPR</Link>
+                    <Link href="/frameworks/nis2" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">NIS2</Link>
+                    <Link href="/frameworks/eu-ai-act" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">EU AI Act</Link>
+                    <Link href="/frameworks/cmmc" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">CMMC</Link>
+                    <Link href="/frameworks/soc1" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOC 1</Link>
+                    <Link href="/frameworks/fedramp" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">FedRAMP</Link>
+                  </div>
+                )}
+              </div>
               <Link href="/contact" className="px-6 py-2 rounded-2xl text-white text-lg font-semibold transition-colors duration-200" style={{ backgroundColor: 'var(--color-accent)' }}>
                 Contact Us
               </Link>
