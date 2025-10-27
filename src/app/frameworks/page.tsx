@@ -7,7 +7,7 @@ import Link from 'next/link';
 // Framework icon component that renders different icons based on the framework
 const FrameworkIcon = ({ framework }: { framework: string }) => {
   const iconProps = { size: 32, className: "text-black" };
-  
+
   switch (framework) {
     case 'SOC 2':
       return <ShieldCheck {...iconProps} />;
@@ -126,27 +126,27 @@ export default function Frameworks() {
               <p className="text-white/90 text-xl leading-relaxed mb-8">
                 Navigate the complex world of compliance with confidence. Our expertise spans the most critical frameworks that protect your business and build trust with your stakeholders.<br /><br />
                 From cybersecurity to data privacy, financial controls to healthcare compliance, we help you implement the right frameworks for your industry and growth stage.
-              </p>
-              <button className="bg-white text-gray-900 px-8 py-3 hover:bg-gray-100 transition-colors border rounded-2xl font-semibold">
-                Get Framework Assessment
-              </button>
+              </p>              
+                <Link href="https://outlook.office.com/bookwithme/user/9527971fc7584d2cb090be7016fb4b80%40turnkeycompliance.net?anonymous&ismsaljsauthenabled=true" target="_blank" className="bg-white text-black px-8 py-3 rounded-2xl font-medium">
+                  Schedule Consultation
+                </Link>              
             </div>
-            
+
             {/* Right column - Image */}
             <div className="flex justify-center">
-            <div className="relative">
-              <Image
-                src="/adventure.jpg"
-                alt="TurnKey Compliance Team Strategy"
-                width={512}
-                height={448}
-                className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
-              />
-              <div
-                className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
-                style={{ backgroundColor: 'var(--color-accent)' }}
-              />
-            </div>
+              <div className="relative">
+                <Image
+                  src="/adventure.jpg"
+                  alt="TurnKey Compliance Team Strategy"
+                  width={512}
+                  height={448}
+                  className="hidden md:block relative z-10 w-full max-w-lg object-cover h-112 rounded-tl-4xl rounded-br-4xl"
+                />
+                <div
+                  className="absolute -left-2 -bottom-2 md:-left-4 md:-bottom-4 w-full h-full rounded-tl-4xl rounded-br-4xl"
+                  style={{ backgroundColor: 'var(--color-accent)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function Frameworks() {
       {/* Frameworks Grid Section */}
       <div className="py-12 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Section Header */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-16">
             <div className="lg:col-span-2">
@@ -184,35 +184,35 @@ export default function Frameworks() {
               const borderColor = isEven ? 'border-accent-light' : 'border-accent';
               const shadowColor = isEven ? 'var(--color-accent-light)' : 'var(--color-accent)';
               const borderRadius = isEven ? 'rounded-tr-4xl rounded-bl-4xl' : 'rounded-tl-4xl rounded-br-4xl';
-              
+
               return (
-              <div
-                key={framework.title}
-                className={`bg-white p-4 md:p-6 border-2 ${borderColor} transition-all duration-300 ${borderRadius} flex flex-col h-full`}
-                style={{
-                  boxShadow: hoveredCard === framework.title 
-                    ? `10px 10px 0px ${shadowColor}`
-                    : `8px 8px 0px ${shadowColor}`
-                }}
-                onMouseEnter={() => setHoveredCard(framework.title)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <FrameworkIcon framework={framework.title} />
-                  <h4 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
-                    {framework.title}
-                  </h4>
-                </div>
-                <p className="text-gray-600 text-base mb-6 flex-grow">
-                  {framework.description}
-                </p>
-                <a
-                  href={framework.link}
-                  className="text-black font-medium hover:underline transition-colors text-right"
+                <div
+                  key={framework.title}
+                  className={`bg-white p-4 md:p-6 border-2 ${borderColor} transition-all duration-300 ${borderRadius} flex flex-col h-full`}
+                  style={{
+                    boxShadow: hoveredCard === framework.title
+                      ? `10px 10px 0px ${shadowColor}`
+                      : `8px 8px 0px ${shadowColor}`
+                  }}
+                  onMouseEnter={() => setHoveredCard(framework.title)}
+                  onMouseLeave={() => setHoveredCard(null)}
                 >
-                  Learn More &gt;
-                </a>
-              </div>
+                  <div className="flex items-center gap-4 mb-4">
+                    <FrameworkIcon framework={framework.title} />
+                    <h4 className="text-xl font-semibold text-gray-800" style={{ color: 'var(--color-accent)' }}>
+                      {framework.title}
+                    </h4>
+                  </div>
+                  <p className="text-gray-600 text-base mb-6 flex-grow">
+                    {framework.description}
+                  </p>
+                  <a
+                    href={framework.link}
+                    className="text-black font-medium hover:underline transition-colors text-right"
+                  >
+                    Learn More &gt;
+                  </a>
+                </div>
               );
             })}
           </div>
@@ -229,7 +229,7 @@ export default function Frameworks() {
             Let our experts guide you through the compliance journey that&apos;s right for your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/contact" className="bg-white text-black px-8 py-3 rounded-2xl font-medium hover:bg-white/10 transition-colors">
+            <Link href="https://outlook.office.com/bookwithme/user/9527971fc7584d2cb090be7016fb4b80%40turnkeycompliance.net?anonymous&ismsaljsauthenabled=true" target="_blank" className="bg-white text-black px-8 py-3 rounded-2xl font-medium ">
               Schedule Consultation
             </Link>
           </div>

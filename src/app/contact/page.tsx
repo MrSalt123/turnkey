@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
@@ -16,15 +17,18 @@ export default function ContactPage() {
               <h2 className="text-white text-left mb-6">
                 Ready to Get Started?
               </h2>
-              <p className="text-white/90 text-xl leading-relaxed mb-8 ">
-                Let&apos;s discuss how TurnKey Compliance can help you build a stronger, more effective compliance program. 
+              <p className="text-white/90 text-xl leading-relaxed mb-12 ">
+                Let&apos;s discuss how TurnKey Compliance can help you build a stronger, more effective compliance program.
                 Get in touch with our experts today.
               </p>
+              <Link href="https://outlook.office.com/bookwithme/user/9527971fc7584d2cb090be7016fb4b80%40turnkeycompliance.net?anonymous&ismsaljsauthenabled=true" target="_blank" className="bg-white text-black px-8 py-3 rounded-2xl font-medium">
+                Schedule a Consultation
+              </Link>
             </div>
-            
+
             {/* Right column - Image */}
             <div className="flex justify-center">
-            <div className="relative">
+              <div className="relative">
                 <Image
                   src="/help.png"
                   alt="TurnKey Compliance Team Strategy"
@@ -46,7 +50,7 @@ export default function ContactPage() {
       <ContactForm />
 
       {/* CTA Section */}
-      
+
     </div>
   );
 }

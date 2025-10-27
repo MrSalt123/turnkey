@@ -22,8 +22,8 @@ export default function About() {
               </h2>
               <p className="text-white/90 text-xl leading-relaxed mb-8">
                 We believe in a true partnership, creating personalized compliance programs that align with your business goals.<br /><br />
-                Our deep industry knowledge, rooted in Big Four philosophies, becomes your strategic advantage.<br /><br />
-                Founded on the principle of simplifying the audit process, our mission is to empower your business.
+                Our deep industry knowledge—rooted in Big Four philosophies and shaped by cutting-edge, real-world experience—becomes your strategic advantage.<br /><br />
+                Founded on the principle of simplifying the audit process, our mission is to empower your business with clarity and confidence.
               </p>
               <Link href="/contact" className="bg-white text-gray-900 px-4 md:px-8 py-3 hover:bg-gray-100 transition-colors rounded-2xl font-semibold">
                 Connect with Us
