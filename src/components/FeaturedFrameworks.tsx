@@ -92,7 +92,7 @@ const FeaturedFrameworks = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-16">
           <div className="lg:col-span-2">
             <h2 className="text-4xl font-bold mb-4 text-white">
-              Mastering the Standards of Security
+              Mastering the Standards of Security, Privacy and AI
             </h2>
             <p className="text-lg text-white/90 max-w-3xl">
               Our team possesses deep expertise in the world&apos;s leading compliance frameworks, ensuring your program is robust, effective, and ready for any audit.

@@ -87,9 +87,9 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <p className="text-[10px] text-gray-500 mt-2 sm:mt-0">
+          {/* <p className="text-[10px] text-gray-500 mt-2 sm:mt-0">
             Made by <a href="https://www.btwn.digital" target="_blank" rel="noopener noreferrer" className="hover:text-gray-800 font-medium">BTWN Digital</a>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

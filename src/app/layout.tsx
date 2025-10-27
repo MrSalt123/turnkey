@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/favicon.png",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: "TurnKey Compliance",
@@ -38,9 +38,9 @@ export default function RootLayout({
         <title>TurnKey Compliance - Expert Compliance Solutions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
       </head>
       <body
         className={`${poppins.className} antialiased min-h-screen bg-cover bg-center bg-no-repeat bg-fixed`}
