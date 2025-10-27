@@ -99,15 +99,15 @@ export default function Header() {
                     <Link href="/frameworks/soc2" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOC 2</Link>
                     <Link href="/frameworks/iso27001" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">ISO 27001</Link>
                     <Link href="/frameworks/iso27701" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">ISO 27701</Link>
-                    <Link href="/frameworks/sox404" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOX 404</Link>
-                    <Link href="/frameworks/pci" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">PCI DSS</Link>
                     <Link href="/frameworks/iso42001" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">ISO 42001</Link>
+                    <Link href="/frameworks/sox404" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOX 404</Link>
+                    <Link href="/frameworks/soc1" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOC 1</Link>
+                    <Link href="/frameworks/pci" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">PCI DSS</Link>
+                    <Link href="/frameworks/fedramp" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">FedRAMP</Link>
+                    <Link href="/frameworks/cmmc" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">CMMC</Link>
                     <Link href="/frameworks/gdpr" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">GDPR</Link>
                     <Link href="/frameworks/nis2" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">NIS2</Link>
                     <Link href="/frameworks/eu-ai-act" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">EU AI Act</Link>
-                    <Link href="/frameworks/cmmc" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">CMMC</Link>
-                    <Link href="/frameworks/soc1" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">SOC 1</Link>
-                    <Link href="/frameworks/fedramp" className="block px-4 py-3 text-gray-800 hover:bg-gray-50">FedRAMP</Link>
                   </div>
                 )}
               </div>
