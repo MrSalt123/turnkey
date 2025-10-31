@@ -65,7 +65,7 @@ const frameworks = [
   },
   {
     title: 'ISO 27001',
-    description: 'An international standard that establishes an ISMS framework and implements robust security controls to protect data and reduce risk.',
+    description: 'An international standard that establishes an Information Security Management System (ISMS) framework and implements robust security controls to protect data and reduce risk.',
     path: '/frameworks/iso27001',
   },
   {
@@ -95,8 +95,7 @@ const FeaturedFrameworks = () => {
               Mastering the Standards of Security, Privacy and AI
             </h2>
             <p className="text-lg text-white/90 max-w-3xl">
-              Our team possesses deep expertise in the world&apos;s leading compliance frameworks, ensuring your program is robust, effective, and ready for any audit.
-            </p>
+              With expertise across the world&apos;s leading compliance frameworks, we ensure your program is robust, effective, and audit-ready. Below are the most common frameworks we support.            </p>
           </div>
           <div className="hidden lg:flex justify-center items-center">
             <Image

@@ -58,8 +58,8 @@ export default function WhoWeAre() {
           {/* Card 3: Industry Knowledge */}
           <div className="flex flex-col gap-8 md:mt-8">
             <div
-              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent rounded-tr-4xl rounded-bl-4xl"
-              style={{ boxShadow: '8px 8px 0px var(--color-accent)', minHeight: '280px' }}
+              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent-light md:border-accent rounded-tr-4xl rounded-bl-4xl shadow-[8px_8px_0px_var(--color-accent-light)] md:shadow-[8px_8px_0px_var(--color-accent)]"
+              style={{ minHeight: '280px' }}
             >
               <div className="flex items-center gap-4 mb-4">
                 <Factory size={40} strokeWidth={1.5} className="text-black" />
@@ -74,8 +74,8 @@ export default function WhoWeAre() {
 
             {/* Card 4: Scalable Success */}
             <div
-              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent-light rounded-tr-4xl rounded-bl-4xl"
-              style={{ boxShadow: '8px 8px 0px var(--color-accent-light)', minHeight: '280px' }}
+              className="bg-white p-4 md:p-6 transition-all duration-300 hover:shadow-lg border border-2 border-accent md:border-accent-light rounded-tr-4xl rounded-bl-4xl shadow-[8px_8px_0px_var(--color-accent)] md:shadow-[8px_8px_0px_var(--color-accent-light)]"
+              style={{ minHeight: '280px' }}
             >
               <div className="flex items-center gap-4 mb-4">
                 <TrendingUp size={40} strokeWidth={1.5} className="text-black" />

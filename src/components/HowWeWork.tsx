@@ -101,7 +101,7 @@ const HowWeWork = () => {
                 </h5>
               </div>
               <p className="text-gray-600 text-base">
-                We manage external auditors and streamline the evidence collectionprocess.
+                We manage external auditors and streamline the evidence collection process.
               </p>
             </div>
           </div>

@@ -87,8 +87,7 @@ export default function ServicesPage() {
               </h3>
               <h5 className='mb-4'>Compare where your organization stands against compliance frameworks and standards.</h5>
               <p className="text-gray-600 text-base mb-6 flex-grow">
-                Uncover hidden risks and get a clear roadmap for your compliance journey. We identify gaps
-                across your people, processes, and technology to ensure you&apos;re audit-ready.
+              Get a clear roadmap for your compliance journey. We identify gaps across your people, processes, and technology to ensure you&apos;re audit-ready for any frameworks you choose to implement.
               </p>
               <div className="text-right mt-auto">
                 <Link
@@ -221,7 +220,7 @@ export default function ServicesPage() {
                   <div className="flex-shrink-0">
                     <CheckCircle className="w-10 h-10 stroke-1" style={{ color: 'var(--color-accent)' }} />
                   </div>
-                  <span className="text-lg text-gray-700">Healthcare & Life Sciences</span>
+                  <span className="text-lg text-gray-700">Healthcare</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="flex-shrink-0">

@@ -25,13 +25,6 @@ export default function Footer() {
               <a href="https://www.linkedin.com/in/jasonlannen" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-800 transition-colors">
                 <Linkedin size={18} />
               </a>
-              {/* Add other social links if available, or remove these */}
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-800 transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-800 transition-colors">
-                <Twitter size={18} />
-              </a>
             </div>
           </div>
 
